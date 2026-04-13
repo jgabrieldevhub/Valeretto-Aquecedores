@@ -71,7 +71,11 @@ section {
 .logo img{
     width: 194px;
     height: 60px;
-    margin-right: 40px;
+}
+
+.navbar {
+    margin-left: 80px;
+    margin-right: 10px;
 }
 
 .navbar a {
