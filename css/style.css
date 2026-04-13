@@ -71,15 +71,21 @@ section {
 .logo img{
     width: 194px;
     height: 60px;
+    margin-right: 40px;
 }
 
 .navbar a {
-    margin: 0 1rem;
+    margin: 0.6rem;
     text-decoration: none;
     color: var(--orange);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-family: "inter-semibold", sans-serif;
     cursor: pointer;
+}
+
+.navbar a:hover {
+    color: var(--dark-gray);
+    transition: 0.4s all;
 }
 
 .search {
