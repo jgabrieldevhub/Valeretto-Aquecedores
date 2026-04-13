@@ -58,6 +58,7 @@ section {
     left: 0;
     right: 0;
     z-index: 99;
+    box-shadow: 0 2px 4px 0 #0000003f;
 }
 
 .header section {
