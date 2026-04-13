@@ -28,7 +28,13 @@
     src: url(../fonts/Inter-SemiBold.woff2) format(woff2);
 }
 
-
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
 
 :root {
     --orange: #ec9744; 
@@ -37,4 +43,80 @@
 
 html {
     scroll-behavior: smooth;
+}
+
+section {
+    padding: 1.5rem 1rem;
+    margin: 0 auto;
+    max-width: 1200px;
+    
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.logo img{
+    width: 194px;
+    height: 60px;
+}
+
+.navbar a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: var(--orange);
+    font-size: 1.2rem;
+    font-family: "inter-semibold", sans-serif;
+    cursor: pointer;
+}
+
+.search {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #0000003f;
+    border-radius: 0.5rem;
+    padding: 0.2rem 0;
+}
+
+.search input {
+    width: 100%;
+    height: 100%;
+    margin-left: 10px;
+}
+
+.search button {
+    background: transparent;
+    margin-right: 10px;
+}
+
+.login-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.login-text {
+    line-height: 120%;
+    font-size: 0.9rem;
+}
+
+.login-text b {
+    color: var(--orange);
+    font-size: 0.9rem;
 }
