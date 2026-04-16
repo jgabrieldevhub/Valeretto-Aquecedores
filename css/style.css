@@ -48,8 +48,7 @@ html {
 section {
     padding: 1.5rem 1rem;
     margin: 0 auto;
-    max-width: 1200px;
-    
+    max-width: 1200px;   
 }
 
 .header {
@@ -58,25 +57,11 @@ section {
     left: 0;
     right: 0;
     z-index: 99;
-    box-shadow: 0 2px 4px 0 #0000003f;
-}
-
-.header section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
 }
 
 .logo img{
     width: 194px;
     height: 60px;
-}
-
-.navbar {
-    margin-left: 80px;
-    margin-right: 10px;
 }
 
 .navbar a {
@@ -95,12 +80,6 @@ section {
 
 .search {
     width: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #0000003f;
-    border-radius: 0.5rem;
-    padding: 0.2rem 0;
 }
 
 .search input {
