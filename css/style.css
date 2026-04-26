@@ -85,20 +85,7 @@ section {
     height: 3rem;
 }
 
-.search-bar {
-    width: 100%;
-    height: 100%;
-}
-
-.search button {
-    background: transparent;
-}
-
 .login-box {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-left: 1rem;
     cursor: pointer;
 }
 
