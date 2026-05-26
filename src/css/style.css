@@ -46,55 +46,12 @@ html {
     scroll-behavior: smooth;
 }
 
-section {
-    padding: 1rem 2rem;
-    margin: 0 auto;
-    max-width: 1200px;   
-}
-
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 99;
-    box-shadow: 0 2px 4px 0 #0000003f;
-}
-
 .logo img{
     width: 194px;
     height: 60px;
 }
 
-.navbar a {
-    margin: 0.6rem;
-    text-decoration: none;
-    color: var(--orange);
-    font-size: 1.1rem;
-    font-family: "inter-semibold", sans-serif;
-    cursor: pointer;
-}
-
-.navbar a:hover {
-    color: var(--dark-gray);
-    transition: 0.6s all;
-}
-
-.search {
-    width: 400px;
-    height: 3rem;
-}
-
-.login-box {
-    cursor: pointer;
-}
-
-.login-text {
-    line-height: 120%;
-    font-size: 0.9rem;
-}
-
-.login-text b {
-    color: var(--orange);
-    font-size: 0.9rem;
+.icon {
+    width: 80px;
+    height: 80px;
 }

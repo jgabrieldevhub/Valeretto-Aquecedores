@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,41 +9,82 @@
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="icon" href="./src/img/transparent_png/cropped-Valeretto-favicon-192x192.png" sizes="192x192">
 </head>
+
 <body>
 
-    <header class="header shadow-sm">
-        <section class="d-flex align-items-center text-center justify-content-between">
-            <a href="#" class="logo">
-                <img src="./src/img/transparent_png/cropped-Valeretto-Logo.png" alt="Valeretto Aquecedores Logo">
-            </a>
-            
-            <nav class="navbar ms-auto me-auto">
-                <a href="#">Produtos</a>
-                <a href="#">Nossa História</a>
-                <a href="#">Contato</a>
-            </nav>
-
-            <form class="search d-flex text-center justify-content-center border border-secundary rounded-2">
-                <input type="text" class="search-bar ms-2 w-100 h-100" placeholder="Pesquisar">
-                <button type="submit" class="search-button me-2 bg-transparent">
-                    <img width="26" height="26" src="https://img.icons8.com/ios-filled/26/ec9744/search--v1.png" alt="search--v1"/>
+    <header>
+        <nav class="navbar navbar-expand-lg shadow-sm">
+            <div class="container container-fluid">
+                <a class="logo navbar-brand" href="#"><img src="./src/img/transparent_png/cropped-Valeretto-Logo.png"
+                        alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-            </form>
 
-            <div class="login-box d-flex align-items-center gap-1 ms-auto">
-                <img class="login-icon" width="32" height="32" src="https://img.icons8.com/pastel-glyph/32/ec9744/user-male-circle.png" alt="user-male-circle"/>
-                <div class="login-text">
-                    <b>Entre</b>
-                    ou
-                    <br>
-                    <b>Cadastre-se</b>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="ms-auto navbar-nav">
+                        <li class="nav-item dropdown text">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Produtos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Aquecedor a Gás</a></li>
+                                <li><a class="dropdown-item" href="#">Aquecedor Solar</a></li>
+                                <li><a class="dropdown-item" href="#">Aquecedor Solar de Piscina</a></li>
+                                <li><a class="dropdown-item" href="#">Iluminação de Piscina</a></li>
+                                <li><a class="dropdown-item" href="#">Pressurizadoras</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Nossa História</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contato</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </section>
+        </nav>
     </header>
+
+    <main>
+        <div id="carouselExampleIndicators" class="carousel slide container mt-2 mb-2">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="./src/img/Piscina_iluminada_resort.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="./src/img/piscina_iluminada_panoramica.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="./src/img/piscina_aquecida_panoramica.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+        </div>
+    </main>
 
     <script src="./src/js/bootstrap.bundle.min.js"></script>
     <script src="./src/js/script.js"></script>
 
 </body>
+
 </html>
