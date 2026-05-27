@@ -35,11 +35,30 @@
     border: none;
     text-decoration: none;
     box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
 }
 
 :root {
-    --orange: #ec9744; 
-    --dark-gray: #333333;
+    --bs-orange: #ec9744; 
+    --bs-dark-gray: #333333;
+}
+
+.text-orange {
+    color: var(--bs-orange);
+}
+
+.fs-5 {
+    font-size: 1.20rem !important;
+}
+
+.hover-orange:hover {
+    color: var(--bs-orange);
+    transition: all 0.20s ease-in-out;
+}
+
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
 }
 
 html {
@@ -49,9 +68,4 @@ html {
 .logo img{
     width: 194px;
     height: 60px;
-}
-
-.icon {
-    width: 80px;
-    height: 80px;
 }
