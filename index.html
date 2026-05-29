@@ -30,7 +30,7 @@
                                 aria-expanded="false">
                                 Produtos
                             </a>
-                            <ul class="dropdown-menu border-0 fs-5 fw-medium">
+                            <ul class="dropdown-menu border-0 shadow-sm fs-6 fw-medium">
                                 <li><a class="dropdown-item hover-orange" href="#">Aquecedor a Gás</a></li>
                                 <li><a class="dropdown-item hover-orange" href="#">Aquecedor Solar</a></li>
                                 <li><a class="dropdown-item hover-orange" href="#">Aquecedor Solar de Piscina</a></li>
@@ -48,15 +48,23 @@
                             <a class="nav-link text-orange" href="#">Contato</a>
                         </li>
                     </ul>
-                    <div class="login-box d-flex align-items-center gap-1 ms-auto">
-                <img class="login-icon" width="32" height="32" src="https://img.icons8.com/pastel-glyph/32/ec9744/user-male-circle.png" alt="user-male-circle"/>
-                <div class="login-text">
-                    <a href="#"><b>Entre</b></a>
-                    ou
-                    <br>
-                    <b>Cadastre-se</b>
-                </div>
-            </div>
+                    <ul class="ms-auto navbar-nav fs-6 fw-semibold">
+                    <li class="nav-item dropdown text">
+                        <div class="d-flex align-items-center gap-1 ms-auto">
+                        <img class="login-icon me-1" width="38" height="38" src="https://img.icons8.com/pastel-glyph/38/ec9744/user-male-circle.png" alt="user-male-circle"/>
+                            <div>
+                            <a href="#" style="color: var(--bs-orange); text-decoration: none;"><b>Entre</b></a>
+                            ou
+                            <br>
+                            <b>Cadastre-se</b>
+                            </div>
+                        </div>
+                        <ul class="dropdown-menu border-0 shadow-sm fs-6 fw-medium">
+                            <li><a class="dropdown-item hover-orange" href="#">Entre</a></li>
+                            <li><a class="dropdown-item hover-orange" href="#">Cadastre-se</a></li>
+                        </ul>
+                    </li>
+                    </ul>
                 </div>
             </div>
         </nav>
