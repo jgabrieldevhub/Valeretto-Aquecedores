@@ -14,18 +14,23 @@
 }
 
 @font-face {
-    font-family: "inter";
+    font-family: "inter-regular";
     src: url(../fonts/Inter-Regular.woff2) format(woff2);
 }
 
 @font-face {
-    font-family: "inter-bold";
-    src: url(../fonts/Inter-Bold.woff2) format(woff2);
+    font-family: "inter-medium";
+    src: url(../fonts/Inter-Medium.woff2) format(woff2);
 }
 
 @font-face {
     font-family: "inter-semibold";
     src: url(../fonts/Inter-SemiBold.woff2) format(woff2);
+}
+
+@font-face {
+    font-family: "inter-bold";
+    src: url(../fonts/Inter-Bold.woff2) format(woff2);
 }
 
 * {
@@ -35,12 +40,28 @@
     border: none;
     text-decoration: none;
     box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
+    font-family: 'inter-medium', sans-serif;
 }
 
 :root {
     --bs-orange: #ec9744; 
     --bs-dark-gray: #54595F;
+}
+
+.fw-inter-regular {
+    font-family: 'Inter-regular', sans-serif !important;
+}
+
+.fw-inter-medium {
+    font-family: 'Inter-medium', sans-serif !important;
+}
+
+.fw-inter-semibold {
+    font-family: 'Inter-semibold', sans-serif !important;
+}
+
+.fw-inter-bold {
+    font-family: 'Inter-bold', sans-serif !important;
 }
 
 .text-orange {
@@ -59,6 +80,16 @@
 .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
     display: block;
     margin-top: 0;
+}
+
+.link-custom {
+    color: #fff;
+    text-decoration: none;
+}
+
+.link-custom:hover{
+    color: var(--bs-orange);
+    transition: all 0.20s ease-in-out;
 }
 
 html {

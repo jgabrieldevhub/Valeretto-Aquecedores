@@ -25,13 +25,13 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="ms-auto navbar-nav fs-5 fw-semibold">
+                    <ul class="ms-auto navbar-nav fs-5 fw-inter-semibold gap-2">
                         <li class="nav-item dropdown text">
                             <a class="nav-link dropdown-toggle text-orange" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 Produtos
                             </a>
-                            <ul class="dropdown-menu border-0 shadow-sm fs-6 fw-medium">
+                            <ul class="dropdown-menu border-0 shadow-sm fs-6 fw-inter-medium">
                                 <li><a class="dropdown-item hover-orange" href="#">Aquecedor a Gás</a></li>
                                 <li><a class="dropdown-item hover-orange" href="#">Aquecedor Solar</a></li>
                                 <li><a class="dropdown-item hover-orange" href="#">Aquecedor Solar de Piscina</a></li>
@@ -49,15 +49,15 @@
                             <a class="nav-link text-orange" href="#">Contato</a>
                         </li>
                     </ul>
-                    <ul class="ms-auto navbar-nav fs-6 fw-semibold">
+                    <ul class="ms-auto navbar-nav fs-6 fw-inter-semibold">
                     <li class="nav-item dropdown text">
                         <div class="d-flex align-items-center gap-1 ms-auto">
                         <img class="login-icon me-1" width="38" height="38" src="https://img.icons8.com/pastel-glyph/38/ec9744/user-male-circle.png" alt="user-male-circle"/>
                             <div>
-                            <a href="#" style="color: var(--bs-orange); text-decoration: none;"><b>Entre</b></a>
+                            <a href="#" class="text-decoration-none" style="color: var(--bs-orange);"><b>Entre</b></a>
                             ou
                             <br>
-                            <a href="#" style="color: var(--bs-dark-gray); text-decoration: none;"><b>Cadastre-se</b></a>
+                            <a href="#" class="text-decoration-none" style="color: var(--bs-dark-gray);"><b>Cadastre-se</b></a>
                             </div>
                         </div>
                         <ul class="dropdown-menu border-0 shadow-sm fs-6 fw-medium">
@@ -151,30 +151,58 @@
         </div>
 
       </div> -->
+      
     <script src="./src/js/bootstrap.bundle.min.js"></script>
     <script src="./src/js/script.js"></script>
 
-    <footer class="pt-5 pb-5" style="background-color: var(--bs-dark-gray);">
+    <footer class="pt-5 pb-4 fixed-bottom" style="background-color: var(--bs-dark-gray);">
         <div class="container">
-            <div class="row">
-                <div class="col text-white mb-5 fs-6">
-                    <h5 class="fw-semibold" style="color: var(--bs-orange);">Valeretto Aquecedores</h5>
-                    <p>Av. 09 de Julho, 1061 <br>
-                    Americana, SP <br>
-                    13471-140</p>
+            <div class="row ali">
+                <div class="col-lg-6 text-white mb-5 fs-6">
+                    <h4 class="fw-inter-semibold" style="color: var(--bs-orange);">Valeretto Aquecedores</h4>
 
                     <div>
                         <div>
-                            <i class="bi bi-envelope-at-fill me-3 hover-orange"></i>valeretto@valeretto.com.br
+                            <i class="bi bi-envelope-at-fill me-2 hover-orange"></i>valeretto@valeretto.com.br
                         </div>
                         <div>
-                            <i class="bi bi-whatsapp me-3 hover-orange"></i>(19) 9 9629-4625
+                            <i class="bi bi-whatsapp me-2 hover-orange"></i>(19) 9 9629-4625
                         </div>
                         <div>
-                            <i class="bi bi-telephone-forward-fill me-3 hover-orange"></i>(19) 3405 9681
+                            <i class="bi bi-telephone-forward-fill me-2 hover-orange"></i>(19) 3405 9681
                         </div>
                     </div>
                 </div>
+
+                <div class="col-lg-3">
+                    <h5 class="text-white fw-inter-semibold mb-4">Produtos</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-1 text-white">
+                        <li><a class="text-decoration-none link-custom" href="#">Aquecedor a Gás</a></li>
+                        <li><a class="text-decoration-none link-custom" href="#">Aquecedor Solar</a></li>
+                        <li><a class="text-decoration-none link-custom" href="#">Aquecedor Solar de Piscina</a></li>
+                        <li><a class="text-decoration-none link-custom" href="#">Iluminação de Piscina</a></li>
+                        <li><a class="text-decoration-none link-custom" href="#">Pressurizadoras</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3">
+                    <h5 class="text-white fw-inter-semibold mb-4">Navegação</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-1 text-white">
+                        <li><a class="text-decoration-none link-custom" href="#">Nossa História</a></li>
+                        <li><a class="text-decoration-none link-custom" href="#">Contato</a></li>
+                        <li><a class="text-decoration-none link-custom" href="#">FAQ</a></li>
+                        <li><a class="text-decoration-none link-custom" href="#">Blog</a></li>
+                    </ul>
+
+                    <ul class="list-unstyled d-flex flex-column gap-1 text-white">
+                        <li><a class="text-decoration-none link-custom" href="#">Site do Mapa</a></li>
+                        <li><a class="text-decoration-none link-custom" href="#">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="text-white text-center mt-3">
+                Copyright © 2026 – Valeretto Aquecedores e Acessórios
             </div>
         </div>
     </footer>
