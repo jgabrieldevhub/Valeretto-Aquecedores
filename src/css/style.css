@@ -49,19 +49,23 @@
 }
 
 .fw-inter-regular {
-    font-family: 'Inter-regular', sans-serif !important;
+    font-family: 'inter-regular', sans-serif !important;
+    font-weight: 400 !important;
 }
 
 .fw-inter-medium {
-    font-family: 'Inter-medium', sans-serif !important;
+    font-family: 'inter-medium', sans-serif !important;
+    font-weight: 500 !important;
 }
 
 .fw-inter-semibold {
-    font-family: 'Inter-semibold', sans-serif !important;
+    font-family: 'inter-semibold', sans-serif !important;
+    font-weight: 600 !important;
 }
 
 .fw-inter-bold {
-    font-family: 'Inter-bold', sans-serif !important;
+    font-family: 'inter-bold', sans-serif !important;
+    font-weight: 700 !important;
 }
 
 .text-orange {
