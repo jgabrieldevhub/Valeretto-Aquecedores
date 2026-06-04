@@ -13,8 +13,8 @@
 
 <body>
 
-    <header>
-        <nav class="navbar navbar-expand-lg shadow-sm">
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg shadow-sm bg-white">
             <div class="container container-fluid">
                 <a class="logo navbar-brand" href="#"><img src="./src/img/transparent_png/cropped-Valeretto-Logo.png"
                         alt=""></a>
@@ -27,26 +27,26 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="ms-auto navbar-nav fs-5 fw-inter-semibold gap-2">
                         <li class="nav-item dropdown text">
-                            <a class="nav-link dropdown-toggle text-orange" href="#" role="button" data-bs-toggle="dropdown"
+                            <a class="nav-link dropdown-toggle link-dark-gray" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 Produtos
                             </a>
-                            <ul class="dropdown-menu border-0 shadow-sm fs-6 fw-inter-bold">
-                                <li><a class="dropdown-item hover-orange" href="#">Aquecedor a Gás</a></li>
-                                <li><a class="dropdown-item hover-orange" href="#">Aquecedor Solar</a></li>
-                                <li><a class="dropdown-item hover-orange" href="#">Aquecedor Solar de Piscina</a></li>
-                                <li><a class="dropdown-item hover-orange" href="#">Iluminação de Piscina</a></li>
-                                <li><a class="dropdown-item hover-orange" href="#">Pressurizadoras</a></li>
+                            <ul class="dropdown-menu border-0 shadow-sm fs-6">
+                                <li><a class="dropdown-item hover-orange fw-inter-medium" href="#">Aquecedor a Gás</a></li>
+                                <li><a class="dropdown-item hover-orange fw-inter-medium" href="#">Aquecedor Solar</a></li>
+                                <li><a class="dropdown-item hover-orange fw-inter-medium" href="#">Aquecedor Solar de Piscina</a></li>
+                                <li><a class="dropdown-item hover-orange fw-inter-medium" href="#">Iluminação de Piscina</a></li>
+                                <li><a class="dropdown-item hover-orange fw-inter-medium" href="#">Pressurizadoras</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-orange" aria-current="page" href="#">Nossa História</a>
+                            <a class="nav-link link-dark-gray" aria-current="page" href="#">Nossa História</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-orange" href="#">Blog</a>
+                            <a class="nav-link link-dark-gray" href="#">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-orange" href="#">Contato</a>
+                            <a class="nav-link link-dark-gray" href="#">Contato</a>
                         </li>
                     </ul>
                     <ul class="ms-auto navbar-nav fs-6 fw-inter-semibold">
@@ -54,10 +54,10 @@
                         <div class="d-flex align-items-center gap-1 ms-auto">
                         <img class="login-icon me-1" width="38" height="38" src="https://img.icons8.com/pastel-glyph/38/ec9744/user-male-circle.png" alt="user-male-circle"/>
                             <div>
-                            <a href="#" class="text-decoration-none" style="color: var(--bs-orange);"><b>Entre</b></a>
+                            <a href="#" class="text-decoration-none text-orange"><b>Entre</b></a>
                             ou
                             <br>
-                            <a href="#" class="text-decoration-none" style="color: var(--bs-dark-gray);"><b>Cadastre-se</b></a>
+                            <a href="#" class="text-decoration-none text-dark-gray"><b>Cadastre-se</b></a>
                             </div>
                         </div>
                         <ul class="dropdown-menu border-0 shadow-sm fs-6 fw-inter-medium">
@@ -151,15 +151,14 @@
         </div>
 
       </div> -->
-      
-    <script src="./src/js/bootstrap.bundle.min.js"></script>
-    <script src="./src/js/script.js"></script>
 
-    <footer class="pt-5 pb-4 fixed-bottom" style="background-color: var(--bs-dark-gray);">
+    <footer class="pt-5 pb-4 bg-dark-gray">
         <div class="container">
             <div class="row ali">
                 <div class="col-lg-6 text-white mb-5 fs-6">
-                    <h4 class="fw-inter-semibold" style="color: var(--bs-orange);">Valeretto Aquecedores</h4>
+                    <h4 class="fw-inter-semibold text-orange">Valeretto Aquecedores</h4>
+                    
+                    <p class="text-white mt-3 mb-4 fw-inter-regular">há mais de 19 anos oferecendo soluções tecnológicas e sustentáveis de alta performance para aquecimento de água.</p>
 
                     <div>
                         <div>
@@ -176,27 +175,27 @@
 
                 <div class="col-lg-3">
                     <h5 class="text-white fw-inter-semibold mb-4">Produtos</h5>
-                    <ul class="list-unstyled d-flex flex-column gap-1 text-white">
-                        <li><a class="text-decoration-none link-custom" href="#">Aquecedor a Gás</a></li>
-                        <li><a class="text-decoration-none link-custom" href="#">Aquecedor Solar</a></li>
-                        <li><a class="text-decoration-none link-custom" href="#">Aquecedor Solar de Piscina</a></li>
-                        <li><a class="text-decoration-none link-custom" href="#">Iluminação de Piscina</a></li>
-                        <li><a class="text-decoration-none link-custom" href="#">Pressurizadoras</a></li>
+                    <ul class="list-unstyled d-flex flex-column gap-1">
+                        <li><a class="text-decoration-none link-orange" href="#">Aquecedor a Gás</a></li>
+                        <li><a class="text-decoration-none link-orange" href="#">Aquecedor Solar</a></li>
+                        <li><a class="text-decoration-none link-orange" href="#">Aquecedor Solar de Piscina</a></li>
+                        <li><a class="text-decoration-none link-orange" href="#">Iluminação de Piscina</a></li>
+                        <li><a class="text-decoration-none link-orange" href="#">Pressurizadoras</a></li>
                     </ul>
                 </div>
 
                 <div class="col-lg-3">
                     <h5 class="text-white fw-inter-semibold mb-4">Navegação</h5>
                     <ul class="list-unstyled d-flex flex-column gap-1 text-white">
-                        <li><a class="text-decoration-none link-custom" href="#">Nossa História</a></li>
-                        <li><a class="text-decoration-none link-custom" href="#">Contato</a></li>
-                        <li><a class="text-decoration-none link-custom" href="#">FAQ</a></li>
-                        <li><a class="text-decoration-none link-custom" href="#">Blog</a></li>
+                        <li><a class="text-decoration-none link-orange" href="#">Nossa História</a></li>
+                        <li><a class="text-decoration-none link-orange" href="#">Contato</a></li>
+                        <li><a class="text-decoration-none link-orange" href="#">FAQ</a></li>
+                        <li><a class="text-decoration-none link-orange" href="#">Blog</a></li>
                     </ul>
 
                     <ul class="list-unstyled d-flex flex-column gap-1 text-white">
-                        <li><a class="text-decoration-none link-custom" href="#">Site do Mapa</a></li>
-                        <li><a class="text-decoration-none link-custom" href="#">Política de Privacidade</a></li>
+                        <li><a class="text-decoration-none link-orange" href="#">Site do Mapa</a></li>
+                        <li><a class="text-decoration-none link-orange" href="#">Política de Privacidade</a></li>
                     </ul>
                 </div>
 
@@ -207,6 +206,8 @@
         </div>
     </footer>
 
+    <script src="./src/js/bootstrap.bundle.min.js"></script>
+    <script src="./src/js/script.js"></script>
 </body>
 
 </html>
