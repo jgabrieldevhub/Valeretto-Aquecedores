@@ -72,6 +72,10 @@
     color: var(--bs-orange);
 }
 
+.text-dark-gray {
+    color: var(--bs-dark-gray);
+}
+
 .fs-5 {
     font-size: 1.20rem !important;
 }
@@ -86,14 +90,28 @@
     margin-top: 0;
 }
 
-.link-custom {
+.link-orange {
     color: #fff;
     text-decoration: none;
 }
 
-.link-custom:hover{
+.link-orange:hover{
     color: var(--bs-orange);
     transition: all 0.20s ease-in-out;
+}
+
+.link-dark-gray {
+    color: var(--bs-orange);
+    text-decoration: none;
+}
+
+.link-dark-gray:hover{
+    color: var(--bs-dark-gray);
+    transition: all 0.20s ease-in-out;
+}
+
+.bg-dark-gray {
+    background-color: var(--bs-dark-gray);
 }
 
 html {
