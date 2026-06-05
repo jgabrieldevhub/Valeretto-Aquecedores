@@ -76,13 +76,16 @@
     color: var(--bs-orange);
 }
 
-.text-dark-gray {
-    color: var(--bs-dark-gray);
+.hover-orange{
+    transition: all 0.20s ease-in-out;
 }
 
 .hover-orange:hover {
     color: var(--bs-orange);
-    transition: all 0.20s ease-in-out;
+}
+
+.text-dark-gray {
+    color: var(--bs-dark-gray);
 }
 
 .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
@@ -93,21 +96,21 @@
 .link-orange {
     color: #fff;
     text-decoration: none;
+    transition: all 0.20s ease-in-out;
 }
 
 .link-orange:hover {
     color: var(--bs-orange);
-    transition: all 0.20s ease-in-out;
 }
 
 .link-dark-gray {
     color: var(--bs-orange);
     text-decoration: none;
+    transition: all 0.20s ease-in-out;
 }
 
 .link-dark-gray:hover{
     color: var(--bs-dark-gray);
-    transition: all 0.20s ease-in-out;
 }
 
 .bg-dark-gray {
@@ -129,6 +132,13 @@ html {
     background-color: #25d366;
     bottom: 3rem;
     right: 3rem ;
+    transition: all 0.20s ease-in-out;
+}
+
+.wpp-icon:hover{
+    background-color: #22af56;
+    color: rgb(138, 138, 138);
+    
 }
 
 /* @media (max-width:768px){
