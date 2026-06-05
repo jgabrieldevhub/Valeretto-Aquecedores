@@ -68,16 +68,16 @@
     font-weight: 700 !important;
 }
 
+.fs-7 {
+    font-size: 0.9rem !important;
+}
+
 .text-orange {
     color: var(--bs-orange);
 }
 
 .text-dark-gray {
     color: var(--bs-dark-gray);
-}
-
-.fs-5 {
-    font-size: 1.20rem !important;
 }
 
 .hover-orange:hover {
@@ -95,7 +95,7 @@
     text-decoration: none;
 }
 
-.link-orange:hover{
+.link-orange:hover {
     color: var(--bs-orange);
     transition: all 0.20s ease-in-out;
 }
@@ -118,7 +118,21 @@ html {
     scroll-behavior: smooth;
 }
 
-.logo img{
+.logo img {
     width: 194px;
     height: 60px;
 }
+
+.wpp-icon {
+    width: 4rem;
+    height: 4rem;
+    background-color: #25d366;
+    bottom: 3rem;
+    right: 3rem ;
+}
+
+/* @media (max-width:768px){
+    .w-75{
+        width: 100% !important;
+    }
+} */
