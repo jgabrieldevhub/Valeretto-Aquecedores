@@ -133,6 +133,7 @@ html {
     bottom: 3rem;
     right: 3rem ;
     transition: all 0.20s ease-in-out;
+    z-index: 3;
 }
 
 .wpp-icon:hover{
@@ -186,6 +187,60 @@ html {
     height: 3.6rem;
     filter: invert(100%);
     margin: 0 2.4rem;
+}
+
+.testimonial-carousel {
+    position: relative;
+}
+
+.testimonial-carousel:before,
+.testimonial-carousel:after {
+    position: absolute;
+    top: 0;
+    width: 4rem;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.testimonial-carousel:before {
+    left: 0;
+    background: linear-gradient(to left, transparent, white);
+}
+
+.testimonial-carousel::after {
+    right: 0;
+    background: linear-gradient(to right, transparent, white);
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: -3rem;
+    z-index: 1;
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    visibility: visible !important;
+}
+
+.carousel-indicators button {
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 0.5rem;
+    background-color: var(--bs-orange);
+    border: none;
+    margin: 0.5rem;
+    opacity: 0.7;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+    background-color: var(--bs-orange);
+    box-shadow: none !important;
+    outline: none !important;
+    transition: background-color 0.3s ease-in-out;
 }
 
 /*
