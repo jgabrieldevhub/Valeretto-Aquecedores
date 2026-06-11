@@ -152,6 +152,7 @@ html {
 }
 
 .logos {
+    max-width: content;
     overflow: hidden;
     padding: 4rem 0;
     white-space: nowrap;
