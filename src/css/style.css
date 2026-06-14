@@ -300,7 +300,7 @@ html {
         rgba(0, 0, 0, 0.4) 50%,
         rgba(0, 0, 0, 0) 100%
         ),
-        url(../img/Aquecedor_solar_de_piscina_valeretto.jpg);
+        url(../../assets/img/Aquecedor_solar_de_piscina_valeretto.jpg);
     }
 
     .hero-homepage p {
