@@ -139,7 +139,6 @@ html {
 .wpp-icon:hover{
     background-color: #22af56;
     color: rgb(138, 138, 138);
-    
 }
 
 @keyframes slide {
@@ -244,14 +243,73 @@ html {
     transition: background-color 0.3s ease-in-out;
 }
 
-/*
+.btn-orange {
+    background-color: var(--bs-orange);
+    color: white;
+    transition: all 0.20s ease-in-out;
+}
+
+.btn-orange:hover {
+    background-color: #e48b32;
+    color: white;
+}
+
+.hero-homepage {
+    position: relative;
+    margin-bottom: -1px;
+    background-image: 
+    linear-gradient(
+      to top, 
+      #ffffff 0%,             
+      rgba(255, 255, 255, 0.5) 15%, 
+      rgba(255, 255, 255, 0) 40% 
+    ),
+    linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0.4) 50%,
+        rgba(0, 0, 0, 0) 100%
+    ),
+    url(../img/Aquecedor_solar_de_piscina_valeretto.jpg);
+}
+
  @media (max-width:768px){
 
     * {
-        font-size: 0.9rem;
+        
     }
 
     .w-75{
         width: 100% !important;
     }
-} */
+
+    .logo img {
+        width: auto;
+        height: 2.8rem;
+    }
+
+    .wpp-icon {
+        bottom: 2rem;
+        right: 2rem;
+    }
+
+    .hero-homepage {
+        text-align: center;
+
+        background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0.4) 50%,
+        rgba(0, 0, 0, 0) 100%
+        ),
+        url(../img/Aquecedor_solar_de_piscina_valeretto.jpg);
+    }
+
+    .hero-homepage p {
+        font-size: 0.9rem;
+    }
+
+    .hero-homepage h1{
+        font-size: 2.4rem;
+    }
+} 
