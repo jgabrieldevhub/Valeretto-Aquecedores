@@ -294,8 +294,6 @@ html {
     }
 
     .hero-homepage {
-        text-align: center;
-
         background-image: linear-gradient(
         to bottom,
         rgba(0, 0, 0, 0.8) 0%,
@@ -311,5 +309,10 @@ html {
 
     .hero-homepage h1{
         font-size: 2.4rem;
+    }
+
+    .content-hero {
+        text-align: center;
+        width: 100%;
     }
 } 
