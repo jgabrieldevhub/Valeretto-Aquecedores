@@ -1,36 +1,36 @@
 @font-face {
     font-family: "poppins";
-    src: url(../fonts/Poppins-Regular.ttf) format(truetype);
+    src: url(../../assets/fonts/Poppins-Regular.ttf) format(truetype);
 }
 
 @font-face {
     font-family: "poppins-bold";
-    src: url(../fonts/Poppins-Bold.ttf) format(truetype);
+    src: url(../../assets/fonts/Poppins-Bold.ttf) format(truetype);
 }
 
 @font-face {
     font-family: "poppins-semibold";
-    src: url(../fonts/Poppins-SemiBold.ttf) format(truetype);
+    src: url(../../assets/fonts/Poppins-SemiBold.ttf) format(truetype);
 }
 
 @font-face {
     font-family: "inter-regular";
-    src: url(../fonts/Inter-Regular.woff2) format(woff2);
+    src: url(../../assets/fonts/Inter-Regular.woff2) format(woff2);
 }
 
 @font-face {
     font-family: "inter-medium";
-    src: url(../fonts/Inter-Medium.woff2) format(woff2);
+    src: url(../../assets/fonts/Inter-Medium.woff2) format(woff2);
 }
 
 @font-face {
     font-family: "inter-semibold";
-    src: url(../fonts/Inter-SemiBold.woff2) format(woff2);
+    src: url(../../assets/fonts/Inter-SemiBold.woff2) format(woff2);
 }
 
 @font-face {
     font-family: "inter-bold";
-    src: url(../fonts/Inter-Bold.woff2) format(woff2);
+    src: url(../../assets/fonts/Inter-Bold.woff2) format(woff2);
 }
 
 * {
