@@ -1,36 +1,36 @@
 @font-face {
     font-family: "poppins";
-    src: url(../fonts/Poppins-Regular.ttf) format(truetype);
+    src: url(../../assets/fonts/Poppins-Regular.ttf) format(truetype);
 }
 
 @font-face {
     font-family: "poppins-bold";
-    src: url(../fonts/Poppins-Bold.ttf) format(truetype);
+    src: url(../../assets/fonts/Poppins-Bold.ttf) format(truetype);
 }
 
 @font-face {
     font-family: "poppins-semibold";
-    src: url(../fonts/Poppins-SemiBold.ttf) format(truetype);
+    src: url(../../assets/fonts/Poppins-SemiBold.ttf) format(truetype);
 }
 
 @font-face {
     font-family: "inter-regular";
-    src: url(../fonts/Inter-Regular.woff2) format(woff2);
+    src: url(../../assets/fonts/Inter-Regular.woff2) format(woff2);
 }
 
 @font-face {
     font-family: "inter-medium";
-    src: url(../fonts/Inter-Medium.woff2) format(woff2);
+    src: url(../../assets/fonts/Inter-Medium.woff2) format(woff2);
 }
 
 @font-face {
     font-family: "inter-semibold";
-    src: url(../fonts/Inter-SemiBold.woff2) format(woff2);
+    src: url(../../assets/fonts/Inter-SemiBold.woff2) format(woff2);
 }
 
 @font-face {
     font-family: "inter-bold";
-    src: url(../fonts/Inter-Bold.woff2) format(woff2);
+    src: url(../../assets/fonts/Inter-Bold.woff2) format(woff2);
 }
 
 * {
@@ -139,7 +139,6 @@ html {
 .wpp-icon:hover{
     background-color: #22af56;
     color: rgb(138, 138, 138);
-    
 }
 
 @keyframes slide {
@@ -244,14 +243,76 @@ html {
     transition: background-color 0.3s ease-in-out;
 }
 
-/*
+.btn-orange {
+    background-color: var(--bs-orange);
+    color: white;
+    transition: all 0.20s ease-in-out;
+}
+
+.btn-orange:hover {
+    background-color: #e48b32;
+    color: white;
+}
+
+.hero-homepage {
+    position: relative;
+    margin-bottom: -1px;
+    background-image: 
+    linear-gradient(
+      to top, 
+      #ffffff 0%,             
+      rgba(255, 255, 255, 0.5) 15%, 
+      rgba(255, 255, 255, 0) 40% 
+    ),
+    linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0.4) 50%,
+        rgba(0, 0, 0, 0) 100%
+    ),
+    url(../../assets/img/Aquecedor_solar_de_piscina_valeretto.jpg);
+}
+
  @media (max-width:768px){
 
     * {
-        font-size: 0.9rem;
+        
     }
 
     .w-75{
         width: 100% !important;
     }
-} */
+
+    .logo img {
+        width: auto;
+        height: 2.8rem;
+    }
+
+    .wpp-icon {
+        bottom: 2rem;
+        right: 2rem;
+    }
+
+    .hero-homepage {
+        background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0.4) 50%,
+        rgba(0, 0, 0, 0) 100%
+        ),
+        url(../../assets/img/Aquecedor_solar_de_piscina_valeretto.jpg);
+    }
+
+    .hero-homepage p {
+        font-size: 0.9rem;
+    }
+
+    .hero-homepage h1{
+        font-size: 2.4rem;
+    }
+
+    .content-hero {
+        text-align: center;
+        width: 100%;
+    }
+} 
