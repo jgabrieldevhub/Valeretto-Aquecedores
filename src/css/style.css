@@ -180,7 +180,7 @@ html {
 
 .logos-slide {
     display: inline-block;
-    animation: 25s slide infinite linear;
+    animation: 24s slide infinite linear;
 }
 
 .logos-slide img {
@@ -272,6 +272,15 @@ html {
     ),
     url(../../assets/img/Aquecedor_solar_de_piscina_valeretto.jpg);
 }
+
+    .cards-hero {
+        margin-top: -4rem;
+    }
+
+    .icon {
+        width: 80px;
+        height: 80px;
+    }
 
  @media (max-width:768px){
 
