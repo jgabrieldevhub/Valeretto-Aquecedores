@@ -113,6 +113,17 @@
     color: var(--bs-dark-gray);
 }
 
+.btn-orange {
+    background-color: var(--bs-orange);
+    color: white;
+    transition: all 0.20s ease-in-out;
+}
+
+.btn-orange:hover {
+    background-color: #e48b32;
+    color: white;
+}
+
 .bg-dark-gray {
     background-color: var(--bs-dark-gray);
 }
@@ -141,53 +152,61 @@ html {
     color: rgb(138, 138, 138);
 }
 
-@keyframes slide {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-100%);
-    }
-}
-
-.logos {
-    max-width: content;
-    overflow: hidden;
-    padding: 4rem 0;
-    white-space: nowrap;
+.hero-homepage {
     position: relative;
+    margin-bottom: -1px;
+    background-image: 
+    linear-gradient(
+      to top, 
+      #ffffff 0%,             
+      rgba(255, 255, 255, 0.5) 15%, 
+      rgba(255, 255, 255, 0) 40% 
+    ),
+    linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0.4) 50%,
+        rgba(0, 0, 0, 0) 100%
+    ),
+    url(../../assets/img/Aquecedor_solar_de_piscina_valeretto.jpg);
 }
 
-.logos:before,
-.logos:after {
-    position: absolute;
-    top: 0;
-    width: 150px;
-    height: 100%;
-    content: "";
-    z-index: 2;
-}
+    .cards-hero {
+        margin-top: -4rem;
+    }
 
-.logos:before {
-    left: 0;
-    background: linear-gradient(to left, transparent, white);
-}
+    .icon {
+        width: 5rem;
+        height: 5rem;
+    }
 
-.logos::after {
-    right: 0;
-    background: linear-gradient(to right, transparent, white);
-}
+    .hover-lift {
+        transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    }
 
-.logos-slide {
-    display: inline-block;
-    animation: 24s slide infinite linear;
-}
+    .hover-lift:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+    }
 
-.logos-slide img {
-    height: 3.6rem;
-    filter: invert(100%);
-    margin: 0 2.4rem;
-}
+    .img-contain {
+        height: 12rem;
+        object-fit: contain;
+    }
+
+    .line-clamp-2 {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        height: 2.6rem;
+    }
+
+    .categorias-img {
+        background-color: black;
+        width: 5rem;
+        height: 5rem;
+    }
 
 .testimonial-carousel {
     position: relative;
@@ -243,68 +262,53 @@ html {
     transition: background-color 0.3s ease-in-out;
 }
 
-.btn-orange {
-    background-color: var(--bs-orange);
-    color: white;
-    transition: all 0.20s ease-in-out;
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
 }
 
-.btn-orange:hover {
-    background-color: #e48b32;
-    color: white;
-}
-
-.hero-homepage {
+.logos {
+    max-width: content;
+    overflow: hidden;
+    padding: 4rem 0;
+    white-space: nowrap;
     position: relative;
-    margin-bottom: -1px;
-    background-image: 
-    linear-gradient(
-      to top, 
-      #ffffff 0%,             
-      rgba(255, 255, 255, 0.5) 15%, 
-      rgba(255, 255, 255, 0) 40% 
-    ),
-    linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.8) 0%,
-        rgba(0, 0, 0, 0.4) 50%,
-        rgba(0, 0, 0, 0) 100%
-    ),
-    url(../../assets/img/Aquecedor_solar_de_piscina_valeretto.jpg);
 }
 
-    .cards-hero {
-        margin-top: -4rem;
-    }
+.logos:before,
+.logos:after {
+    position: absolute;
+    top: 0;
+    width: 150px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
 
-    .icon {
-        width: 5rem;
-        height: 5rem;
-    }
+.logos:before {
+    left: 0;
+    background: linear-gradient(to left, transparent, white);
+}
 
-    .hover-lift {
-        transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-    }
+.logos::after {
+    right: 0;
+    background: linear-gradient(to right, transparent, white);
+}
 
-    .hover-lift:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
-    }
+.logos-slide {
+    display: inline-block;
+    animation: 24s slide infinite linear;
+}
 
-    .img-contain {
-        height: 12rem;
-        object-fit: contain;
-    }
-
-    .line-clamp-2 {
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        height: 2.6rem;
-    }
-
-
+.logos-slide img {
+    height: 3.6rem;
+    filter: invert(100%);
+    margin: 0 2.4rem;
+}
 
  @media (max-width:768px){
 
