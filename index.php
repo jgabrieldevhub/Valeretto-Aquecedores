@@ -138,7 +138,7 @@
         <section class="bg-body-secondary py-5">
             <div class="container">
                 <h4 class="text-center fw-inter-bold mb-5 text-uppercase">Produtos em <b class="text-orange">Destaque</b></h4>
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-3">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-5 g-3">
                     <div class="col">
                         <a href="#" class="card-product card h-100 ml-card shadow-sm text-decoration-none border-0 shadow-sm hover-lift">
                             <img src="..." class="card-img-top p-3 img-contain" alt="...">
@@ -216,7 +216,7 @@
         <section class="bg-body-tertiary py-5">
             <div class="container">
                 <h4 class="text-center fw-inter-bold mb-5 text-uppercase"><b class="text-orange">Categorias</b></h4>
-                    <div class="row row-cols-2 row-cols-xl-5 g-3 d-flex text-center">
+                    <div class="row row-cols-2 row-cols-lg-3 row-cols-xl-5 g-3 d-flex text-center">
                         <div class="col">
                             <a href="#" class="text-decoration-none">
                                 <img src="" alt="" class="rounded-circle mb-2 categorias-img">
