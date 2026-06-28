@@ -1,8 +1,8 @@
  <header class="sticky-top">
         <nav class="navbar navbar-expand-lg shadow-sm bg-white">
             <div class="container container-fluid">
-                <a class="logo navbar-brand" href="#"><img src="./assets/img/transparent_png/cropped-Valeretto-Logo.png"
-                        alt=""></a>
+                <a class="logo navbar-brand" href="../index.php"><img src="../assets/img/transparent_png/cropped-Valeretto-Logo.png"
+                        alt="logo_valeretto"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">

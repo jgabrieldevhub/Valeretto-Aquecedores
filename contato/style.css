@@ -1,0 +1,18 @@
+.contact-section {
+    padding: 3rem 0 9rem 0;
+}
+
+.message-box {
+    resize: none;
+}
+
+.contact-cards {
+    margin-top: -9rem;
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 12rem;
+}

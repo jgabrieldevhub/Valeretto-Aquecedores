@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valeretto Aquecedores - Valeretto</title>
-    <link rel="stylesheet" href="./src/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="./src/css/global.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="icon" href="./assets/img/transparent_png/cropped-Valeretto-favicon-192x192.png" sizes="192x192">
 </head>
@@ -16,7 +16,7 @@
     <header class="sticky-top">
         <nav class="navbar navbar-expand-lg shadow-sm bg-white">
             <div class="container container-fluid">
-                <a class="logo navbar-brand" href="#"><img src="./assets/img/transparent_png/cropped-Valeretto-Logo.png"
+                <a class="logo navbar-brand" href="index.php"><img src="./assets/img/transparent_png/cropped-Valeretto-Logo.png"
                         alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -46,7 +46,7 @@
                             <a class="nav-link link-dark-gray" href="#">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-dark-gray" href="#">Contato</a>
+                            <a class="nav-link link-dark-gray" href="./contato/index.php">Contato</a>
                         </li>
                     </ul>
                     <ul class="ms-auto navbar-nav fs-6 fw-inter-semibold">
@@ -401,7 +401,7 @@
         </div>
     </footer>
 
-    <script src="./src/js/bootstrap.bundle.min.js"></script>
+    <script src="./src/js/vendor/bootstrap.bundle.min.js"></script>
     <script src="./src/js/script.js"></script>
 </body>
 
