@@ -12,27 +12,32 @@
     <main>
 
     <section class="contact-section bg-body-secondary">
+        <h4 class="text-muted text-uppercase text-center fw-inter-bold mb-5">Como prefere falar conosco?</h4>
         <div class="contact-form container">
             <div class="row g-4">
                 <div class="col-lg-7">
                     <div class="bg-white rounded-3 overflow-hidden p-5">
-                        <h4 class="text-muted text-uppercase fw-inter-bold">Como prefere falar conosco?</h4>
-                        <p class="text-muted fw-inter-regular mb-5">Fale connosco. Preencha o formulário abaixo e responderemos brevemente.</p>
-                        <form action="">
+                        <h4 class="text-muted text-uppercase fw-inter-bold"><b class="text-orange">Fale conosco</b></h4>
+                        <p class="text-muted fw-inter-regular mb-5">Preencha o formulário abaixo e responderemos brevemente.</p>
+
+                        <form action="https://formsubmit.co/jorgegabriel.dev@gmail.com" method="POST">
                             <div class="mb-3">
                                 <label class="form-label text-muted" for="contact-name">Nome</label>
-                                <input type="text" name="contact-name" id="contact-name" class="form-control fw-inter-regular">
+                                <input type="text" name="contact-name" id="contact-name" class="form-control fw-inter-regular" required>
                             </div>
                             <div class="mb-3">
                                 <label class="form-label text-muted" for="contact-email">Email</label>
-                                <input type="email" name="contact-email" id="contact-email" class="form-control fw-inter-regular">
+                                <input type="email" name="contact-email" id="contact-email" class="form-control fw-inter-regular" required>
                             </div>
                             <div class="mb-4">
                                 <label class="form-label text-muted" for="contact-message">Mensagem</label>
-                                <textarea name="contact-message" id="contact-message" rows="4" class="message-box form-control fw-inter-regular"></textarea>
+                                <textarea name="contact-message" id="contact-message" rows="4" class="message-box form-control fw-inter-regular" required></textarea>
                             </div>
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_next" value="http://localhost:8000/contato/index.php">
                             <button type="submit" class="btn btn-orange">Enviar</button>
                         </form>
+
                     </div>    
                 </div>
                 <div class="col-lg-5">
