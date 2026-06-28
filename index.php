@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valeretto Aquecedores - Valeretto</title>
-    <link rel="stylesheet" href="./src/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="./src/css/global.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="icon" href="./assets/img/transparent_png/cropped-Valeretto-favicon-192x192.png" sizes="192x192">
 </head>
@@ -16,7 +16,7 @@
     <header class="sticky-top">
         <nav class="navbar navbar-expand-lg shadow-sm bg-white">
             <div class="container container-fluid">
-                <a class="logo navbar-brand" href="#"><img src="./assets/img/transparent_png/cropped-Valeretto-Logo.png"
+                <a class="logo navbar-brand" href="index.php"><img src="./assets/img/transparent_png/cropped-Valeretto-Logo.png"
                         alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -46,7 +46,7 @@
                             <a class="nav-link link-dark-gray" href="#">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-dark-gray" href="#">Contato</a>
+                            <a class="nav-link link-dark-gray" href="./contato/index.php">Contato</a>
                         </li>
                     </ul>
                     <ul class="ms-auto navbar-nav fs-6 fw-inter-semibold">
@@ -138,7 +138,7 @@
         <section class="bg-body-secondary py-5">
             <div class="container">
                 <h4 class="text-center fw-inter-bold mb-5 text-uppercase">Produtos em <b class="text-orange">Destaque</b></h4>
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-3">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-5 g-3">
                     <div class="col">
                         <a href="#" class="card-product card h-100 ml-card shadow-sm text-decoration-none border-0 shadow-sm hover-lift">
                             <img src="..." class="card-img-top p-3 img-contain" alt="...">
@@ -216,7 +216,7 @@
         <section class="bg-body-tertiary py-5">
             <div class="container">
                 <h4 class="text-center fw-inter-bold mb-5 text-uppercase"><b class="text-orange">Categorias</b></h4>
-                    <div class="row row-cols-2 row-cols-xl-5 g-3 d-flex text-center">
+                    <div class="row row-cols-2 row-cols-lg-3 row-cols-xl-5 g-3 d-flex text-center">
                         <div class="col">
                             <a href="#" class="text-decoration-none">
                                 <img src="" alt="" class="rounded-circle mb-2 categorias-img">
@@ -401,7 +401,7 @@
         </div>
     </footer>
 
-    <script src="./src/js/bootstrap.bundle.min.js"></script>
+    <script src="./src/js/vendor/bootstrap.bundle.min.js"></script>
     <script src="./src/js/script.js"></script>
 </body>
 
