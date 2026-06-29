@@ -46,7 +46,7 @@
                             <a class="nav-link link-dark-gray" href="#">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-dark-gray" href="./contato/index.php">Contato</a>
+                            <a class="nav-link link-dark-gray" href="./pages/contato/index.php">Contato</a>
                         </li>
                     </ul>
                     <ul class="ms-auto navbar-nav fs-6 fw-inter-semibold">
