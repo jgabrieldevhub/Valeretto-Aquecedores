@@ -3,11 +3,11 @@
     <?php
         $page_title = "Contato - Valeretto";
         $css_page_link = "./style.css";
-        include("../inc/head.php");
+        include("../../inc/head.php");
     ?>
 <body>
     <?php
-        include("../inc/header.php");
+        include("../../inc/header.php");
     ?>
     <main>
 
@@ -34,7 +34,7 @@
                                 <textarea name="contact-message" id="contact-message" rows="4" class="message-box form-control fw-inter-regular" required></textarea>
                             </div>
                             <input type="hidden" name="_captcha" value="false">
-                            <input type="hidden" name="_next" value="http://localhost:8000/contato/index.php">
+                            <input type="hidden" name="_next" value="http://localhost:8000/pages/contato/index.php">
                             <button type="submit" class="btn btn-orange">Enviar</button>
                         </form>
 
@@ -99,16 +99,16 @@
 
     </main>
     <?php
-        include("../inc/footer.php");
+        include("../../inc/footer.php");
     ?>
 
     <?php
-        include("../inc/wpp.php");
+        include("../../inc/wpp.php");
     ?>
 
     <?php
         $js_page_link = "./script.js";
-        include("../inc/script.php");
+        include("../../inc/script.php");
     ?>
 </body>
 </html>
