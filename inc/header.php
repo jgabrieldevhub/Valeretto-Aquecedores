@@ -25,13 +25,13 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-dark-gray" aria-current="page" href="#">Nossa História</a>
+                            <a class="nav-link link-dark-gray" aria-current="page" href="../../pages/nossa-historia/index.php">Nossa História</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-dark-gray" href="#">Blog</a>
+                            <a class="nav-link link-dark-gray" href="../../pages/blog/index.php">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-dark-gray" href="#">Contato</a>
+                            <a class="nav-link link-dark-gray" href="../../pages/contato/index.php">Contato</a>
                         </li>
                     </ul>
                     <ul class="ms-auto navbar-nav fs-6 fw-inter-semibold">
