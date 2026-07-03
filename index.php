@@ -40,13 +40,13 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-dark-gray" aria-current="page" href="#">Nossa História</a>
+                            <a class="nav-link link-dark-gray" aria-current="page" href="./pages/nossa-historia/index.php">Nossa História</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-dark-gray" href="#">Blog</a>
+                            <a class="nav-link link-dark-gray" aria-current="page" href="./pages/blog/index.php">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-dark-gray" href="./pages/contato/index.php">Contato</a>
+                            <a class="nav-link link-dark-gray" aria-current="page" href="./pages/contato/index.php">Contato</a>
                         </li>
                     </ul>
                     <ul class="ms-auto navbar-nav fs-6 fw-inter-semibold">
@@ -83,8 +83,9 @@
                         <p class="lead mt-3 mb-4 text-white fw-inter-medium">
                             Aquecedores a gás e sistemas solares modernos que garantem alto desempenho e economia para a sua casa
                         </p>
-                        <a class="btn btn-lg btn-orange fw-inter-regular fs-6" href="#">Solicitar Orçamento</a>
+                        <a class="btn btn-lg btn-orange fw-inter-regular fs-6" target="_blank" href="https://api.whatsapp.com/send?phone=5519996294625&text=Ol%C3%A1!%20Gostaria%20de%20saber%20sobre%20aquecedores.">Solicitar Orçamento</a>
                     </div>
+                </div>    
             </div>
         </section>
 
@@ -390,10 +391,10 @@
                 <div class="footer-links col-lg-2 mb-3 fs-7">
                     <h5 class="text-white fw-inter-semibold mb-4">Navegação</h5>
                     <ul class="list-unstyled d-flex flex-column gap-1 text-white">
-                        <li><a class="text-decoration-none link-orange" href="#">Nossa História</a></li>
-                        <li><a class="text-decoration-none link-orange" href="#">Contato</a></li>
+                        <li><a class="text-decoration-none link-orange" href="./pages/nossa-historia/index.php">Nossa História</a></li>
+                        <li><a class="text-decoration-none link-orange" href="./pages/contato/index.php">Contato</a></li>
                         <li><a class="text-decoration-none link-orange" href="#">FAQ</a></li>
-                        <li><a class="text-decoration-none link-orange" href="#">Blog</a></li>
+                        <li><a class="text-decoration-none link-orange" href="./pages/blog/index.php">Blog</a></li>
                     </ul>
 
                     <ul class="list-unstyled d-flex flex-column gap-1 text-white">
