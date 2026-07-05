@@ -122,11 +122,11 @@
 
         <?php
             $categorias_info = [
-                ['./assets/img/transparent_png/Ellipse 19.png','Aquecedor a Gás'],
-                ['./assets/img/transparent_png/Ellipse 20.png','Aquecedor Solar'],
-                ['./assets/img/transparent_png/Ellipse 21.png','Aquecedor Solar de Piscina'],
-                ['./assets/img/transparent_png/Ellipse 28.png','Iluminação de Piscina'],
-                ['./assets/img/transparent_png/Ellipse 30.png','Pressurizadoras'],
+                ['./assets/img/transparent_png/Ellipse 19.png','Aquecedor a Gás','../../php/pages/produto-menu.php?nome=Aquecedor a Gás'],
+                ['./assets/img/transparent_png/Ellipse 20.png','Aquecedor Solar','../../php/pages/produto-menu.php?nome=Aquecedor Solar'],
+                ['./assets/img/transparent_png/Ellipse 21.png','Aquecedor Solar de Piscina','../../php/pages/produto-menu.php?nome=Aquecedor Solar de Piscina'],
+                ['./assets/img/transparent_png/Ellipse 28.png','Iluminação de Piscina','../../php/pages/produto-menu.php?nome=Iluminação de Piscina'],
+                ['./assets/img/transparent_png/Ellipse 30.png','Pressurizadoras','../../php/pages/produto-menu.php?nome=Pressurizadoras'],
             ];
         ?>
 
@@ -138,7 +138,7 @@
                         <?php for($i = 0; $i < count($categorias_info); $i++) {?>
 
                             <div class="col">
-                                <a href="#" class="text-decoration-none">
+                                <a href="<?php echo($categorias_info[$i][2])?>" class="text-decoration-none">
                                     <img src="<?php echo($categorias_info[$i][0])?>" alt="" class="rounded-circle mb-2 categorias-img bg-body">
                                     <div>
                                         <span class="text-muted"><?php echo($categorias_info[$i][1])?></span>

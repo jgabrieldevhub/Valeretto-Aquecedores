@@ -84,8 +84,9 @@ while($linha = mysqli_fetch_assoc($resultado)){
 </main>
 <?php 
 mysqli_close($conexao);
-?>
 
+include("../../../inc/script.php");
+?>
 
 </body>
 </html>

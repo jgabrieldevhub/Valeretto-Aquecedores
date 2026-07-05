@@ -37,6 +37,10 @@
             ?>
         </div>
     </main>
+
+    <?php
+        include("../../inc/script.php");
+    ?>
 </body>
 </html>
 

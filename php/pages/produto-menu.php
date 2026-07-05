@@ -76,6 +76,7 @@
     <?php
         include("../../inc/footer.php");
         include("../../inc/wpp.php");
+        include("../../inc/script.php");
     ?>
 
 </body>

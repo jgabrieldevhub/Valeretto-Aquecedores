@@ -93,6 +93,7 @@
     <?php 
         // Encerra oficialmente a conexão ativa com o banco de dados para liberar memória
         mysqli_close($conexao);
+        include("../../../inc/script.php");
     ?>
 
 </body>

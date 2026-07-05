@@ -115,6 +115,7 @@
     <?php 
         // Encerra oficialmente a conexão aberta com o banco de dados MySQL para liberar recursos do servidor de hospedagem
         mysqli_close($conexao);
+        include("../../inc/script.php");
     ?>
 
 </body>
