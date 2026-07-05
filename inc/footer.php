@@ -33,10 +33,10 @@
                 <div class="footer-links col-lg-2 mb-3 fs-7">
                     <h5 class="text-white fw-inter-semibold mb-4">Navegação</h5>
                     <ul class="list-unstyled d-flex flex-column gap-1 text-white">
-                        <li><a class="text-decoration-none link-orange" href="#">Nossa História</a></li>
-                        <li><a class="text-decoration-none link-orange" href="#">Contato</a></li>
+                        <li><a class="text-decoration-none link-orange" href="../../pages/nossa-historia/index.php">Nossa História</a></li>
+                        <li><a class="text-decoration-none link-orange" href="../../pages/contato/index.php">Contato</a></li>
                         <li><a class="text-decoration-none link-orange" href="#">FAQ</a></li>
-                        <li><a class="text-decoration-none link-orange" href="#">Blog</a></li>
+                        <li><a class="text-decoration-none link-orange" href="../../pages/blog/index.php">Blog</a></li>
                     </ul>
 
                     <ul class="list-unstyled d-flex flex-column gap-1 text-white">

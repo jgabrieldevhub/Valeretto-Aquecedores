@@ -1,7 +1,7 @@
 <?php
-    $conn = mysqli_connect("localhost", "root", "", "db_valeretto");
+    $conexao = mysqli_connect("localhost", "root", "", "db_valeretto");
 
-    if(!$conn){
+    if(!$conexao){
         die("<h3>Erro</h3>".mysqli_connect_error());
     }
 ?>

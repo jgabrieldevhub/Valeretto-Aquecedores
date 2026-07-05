@@ -17,11 +17,11 @@
                                 Produtos
                             </a>
                             <ul class="dropdown-menu border-0 shadow-sm fs-6">
-                                <li><a class="dropdown-item hover-orange fw-inter-medium" href="#">Aquecedor a Gás</a></li>
-                                <li><a class="dropdown-item hover-orange fw-inter-medium" href="#">Aquecedor Solar</a></li>
-                                <li><a class="dropdown-item hover-orange fw-inter-medium" href="#">Aquecedor Solar de Piscina</a></li>
-                                <li><a class="dropdown-item hover-orange fw-inter-medium" href="#">Iluminação de Piscina</a></li>
-                                <li><a class="dropdown-item hover-orange fw-inter-medium" href="#">Pressurizadoras</a></li>
+                                <li><a class="dropdown-item hover-orange fw-inter-medium" href="../../php/pages/produto-menu.php?nome=Aquecedor a Gás">Aquecedor a Gás</a></li>
+                                <li><a class="dropdown-item hover-orange fw-inter-medium" href="../../php/pages/produto-menu.php?nome=Aquecedor Solar">Aquecedor Solar</a></li>
+                                <li><a class="dropdown-item hover-orange fw-inter-medium" href="../../php/pages/produto-menu.php?nome=Aquecedor Solar de Piscina">Aquecedor Solar de Piscina</a></li>
+                                <li><a class="dropdown-item hover-orange fw-inter-medium" href="../../php/pages/produto-menu.php?nome=Iluminação de Piscina">Iluminação de Piscina</a></li>
+                                <li><a class="dropdown-item hover-orange fw-inter-medium" href="../../php/pages/produto-menu.php?nome=Pressurizadoras">Pressurizadoras</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -46,7 +46,7 @@
                             </div>
                         </div>
                         <ul class="dropdown-menu border-0 shadow-sm fs-6 fw-inter-medium">
-                            <li><a class="dropdown-item hover-orange" href="#">Entre</a></li>
+                            <li><a class="dropdown-item hover-orange" href="../../php/pages/login.php">Entre</a></li>
                             <li><a class="dropdown-item hover-orange" href="#">Cadastre-se</a></li>
                         </ul>
                     </li>

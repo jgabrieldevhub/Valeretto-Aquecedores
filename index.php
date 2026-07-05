@@ -1,75 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valeretto Aquecedores - Valeretto</title>
-    <link rel="stylesheet" href="./src/css/vendor/bootstrap.min.css">
-    <link rel="stylesheet" href="./src/css/global.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="icon" href="./assets/img/transparent_png/cropped-Valeretto-favicon-192x192.png" sizes="192x192">
-</head>
+    <?php
+        session_start();
+        $page_title = "Valeretto Aquecedores - Valeretto";
+        include("./inc/head.php");
+    ?>
 
 <body>
 
-    <header class="sticky-top">
-        <nav class="navbar navbar-expand-lg shadow-sm bg-white">
-            <div class="container container-fluid">
-                <a class="logo navbar-brand" href="index.php"><img src="./assets/img/transparent_png/cropped-Valeretto-Logo.png"
-                        alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="ms-auto navbar-nav fs-5 fw-inter-semibold gap-2">
-                        <li class="nav-item dropdown text">
-                            <a class="nav-link dropdown-toggle link-dark-gray" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Produtos
-                            </a>
-                            <ul class="dropdown-menu border-0 shadow-sm fs-6">
-                                <li><a class="dropdown-item hover-orange fw-inter-medium" href="#">Aquecedor a Gás</a></li>
-                                <li><a class="dropdown-item hover-orange fw-inter-medium" href="#">Aquecedor Solar</a></li>
-                                <li><a class="dropdown-item hover-orange fw-inter-medium" href="#">Aquecedor Solar de Piscina</a></li>
-                                <li><a class="dropdown-item hover-orange fw-inter-medium" href="#">Iluminação de Piscina</a></li>
-                                <li><a class="dropdown-item hover-orange fw-inter-medium" href="#">Pressurizadoras</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-dark-gray" aria-current="page" href="./pages/nossa-historia/index.php">Nossa História</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-dark-gray" aria-current="page" href="./pages/blog/index.php">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-dark-gray" aria-current="page" href="./pages/contato/index.php">Contato</a>
-                        </li>
-                    </ul>
-                    <ul class="ms-auto navbar-nav fs-6 fw-inter-semibold">
-                    <li class="nav-item dropdown text">
-                        <div class="d-flex align-items-center gap-1 ms-auto">
-                        <img class="login-icon me-1" width="38" height="38" src="https://img.icons8.com/pastel-glyph/38/ec9744/user-male-circle.png" alt="user-male-circle"/>
-                            <div>
-                            <a href="#" class="text-decoration-none text-orange"><b>Entre</b></a>
-                            ou
-                            <br>
-                            <a href="#" class="text-decoration-none text-dark-gray"><b>Cadastre-se</b></a>
-                            </div>
-                        </div>
-                        <ul class="dropdown-menu border-0 shadow-sm fs-6 fw-inter-medium">
-                            <li><a class="dropdown-item hover-orange" href="#">Entre</a></li>
-                            <li><a class="dropdown-item hover-orange" href="#">Cadastre-se</a></li>
-                        </ul>
-                    </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <?php
+        include("./inc/header.php");
+    ?>
 
     <main>
         <section class="hero-homepage py-5">
@@ -89,49 +31,32 @@
             </div>
         </section>
 
+        <?php
+            $home_cads_info = [
+                ['./assets/icons/Icone_vinte_anos.svg','Há mais de 20 anos de experiência no mercado de sistema de aquecimento de água'],
+                ['./assets/icons/Icone_gota.svg','Milhares de litros de água aquecida por ano pelos nossos profissionais efecientes'],
+                ['./assets/icons/Icone_consultoria_pre.svg','Oferecemos consultoria pré-instalação para melhor desempenho do sistema'],
+                ['./assets/icons/Icone_seguro.svg','Trabalhamos com sistemas para projetos residências, comerciais e industriais'],
+            ];
+        ?>
+
         <section class="cards-hero pb-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3">
-                        <div class="card text-center border-0 shadow p-3 my-3 h-auto">
-                            <div>
-                            <img src="./assets/icons/Icone_vinte_anos.svg" class="icon card-img-top" alt="...">
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text fs-7 fw-inter-regular">Há mais de 20 anos de experiência no mercado de sistema de aquecimento de água</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="card text-center border-0 shadow p-3 my-3 h-auto">
-                            <div>
-                            <img src="./assets/icons/Icone_gota.svg" class="icon card-img-top" alt="...">
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text fs-7 fw-inter-regular">Milhares de litros de água aquecida por ano pelos nossos profissionais efecientes</p>
+                    <?php for($i = 0; $i < count($home_cads_info); $i++) {?>
+                        <div class="col-lg-3">
+                            <div class="card text-center border-0 shadow p-3 my-3 h-auto">
+                                <div>
+                                    <img src="<?php echo($home_cads_info[$i][0])?>" class="icon card-img-top" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text fs-7 fw-inter-regular"><?php echo($home_cads_info[$i][1])?></p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="card text-center border-0 shadow p-3 my-3 h-auto">
-                            <div>
-                            <img src="./assets/icons/Icone_consultoria_pre.svg" class="icon card-img-top" alt="...">
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text fs-7 fw-inter-regular">Oferecemos consultoria pré-instalação para melhor desempenho do sistema</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="card text-center border-0 shadow p-3 my-3 h-auto">
-                            <div>
-                            <img src="./assets/icons/Icone_seguro.svg" class="icon card-img-top" alt="...">
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text fs-7 fw-inter-regular">Trabalhamos com sistemas para projetos residências, comerciais e industriais</p>
-                            </div>
-                        </div>
-                    </div>
+                    <?php
+                        }
+                    ?>    
                 </div>
             </div>
         </section>
@@ -140,124 +65,91 @@
             <div class="container">
                 <h4 class="text-center fw-inter-bold mb-5 text-uppercase">Produtos em <b class="text-orange">Destaque</b></h4>
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-5 g-3">
-                    <div class="col">
-                        <a href="#" class="card-product card h-100 ml-card shadow-sm text-decoration-none border-0 shadow-sm hover-lift">
-                            <img src="..." class="card-img-top p-3 img-contain" alt="...">
-                            <div class="card-body p-3 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h4 class="fs-6 fw-inter-regular mb-1 line-clamp-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident perspiciatis labore, aut, tempora sapiente corrupti, vel veritatis repudiandae repellendus saepe sed? Alias sit quod repellendus est officiis deserunt nostrum facilis!</h4>
-                                    <div class="d-flex align-items-center mb-1">
-                                        <span class="fs-4 fw-inter-regular">R$ 279</span>
+
+                    <?php
+                        include("./inc/conn.php");
+
+                        $id = isset($_GET['id']) ? (int)$_GET['id'] : 0;
+
+                        if ($id > 0) {
+                            $sql = "SELECT * FROM tb_produto WHERE id_produto = $id";
+                        } else {
+                            $sql = "SELECT * FROM tb_produto";
+                        }
+
+                        $resultado = mysqli_query($conexao, $sql);
+
+        
+                        if ($resultado) {
+                            while($linha = mysqli_fetch_assoc($resultado)){
+                                $id_prod   = $linha['id_produto'];
+                                $nome      = $linha['nome_produto'];
+                                $descricao = $linha['descricao_produto'];
+                                $estoque   = $linha['estoque_produto'];
+                                $preco     = number_format($linha['preco_produto'], 2, ',', '.');
+                                $foto      = $linha['imagem_produto'];
+                    ?>
+
+                        <div class="col">
+                            <a href="https://api.whatsapp.com/send?phone=5519996294625&text=Ol%C3%A1!%20Gostaria%20de%20saber%20sobre%20<?=$nome?>." class="card-product card h-100 ml-card shadow-sm text-decoration-none border-0 shadow-sm hover-lift">
+                                <img src="<?=$foto; ?>" alt="<?=$nome; ?>" class="card-img-top p-3 img-contain" alt="...">
+                                <div class="card-body p-3 d-flex flex-column justify-content-between">
+                                    <div>
+                                        <h4 class="fs-4 fw-inter-bold mb-1 line-clamp-2"><?=$nome; ?></h4>
+                                        <h4 class="fs-6 fw-inter-regular text-mu4 mb-1 line-clamp-2"><?=$descricao; ?></h4>
+                                        <div class="d-flex align-items-center mb-1">
+                                            <span class="fs-4 fw-inter-semibold text-orange">R$ <?=$preco; ?></span>
+                                        </div>
+                                        <div class="small mb-2">Disponível: <?php echo $estoque; ?> unidades.</div>
                                     </div>
-                                    <div class="small mb-2">em 10x R$ 27,90 sem juros</div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a href="#" class="card-product card h-100 ml-card shadow-sm text-decoration-none border-0 shadow-sm hover-lift">
-                            <img src="..." class="card-img-top p-3 img-contain" alt="...">
-                            <div class="card-body p-3 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h4 class="fs-6 fw-inter-regular mb-1 line-clamp-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident perspiciatis labore, aut, tempora sapiente corrupti, vel veritatis repudiandae repellendus saepe sed? Alias sit quod repellendus est officiis deserunt nostrum facilis!</h4>
-                                    <div class="d-flex align-items-center mb-1">
-                                        <span class="fs-4 fw-inter-regular">R$ 279</span>
-                                    </div>
-                                    <div class="small mb-2">em 10x R$ 27,90 sem juros</div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a href="#" class="card-product card h-100 ml-card shadow-sm text-decoration-none border-0 shadow-sm hover-lift">
-                            <img src="..." class="card-img-top p-3 img-contain" alt="...">
-                            <div class="card-body p-3 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h4 class="fs-6 fw-inter-regular mb-1 line-clamp-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident perspiciatis labore, aut, tempora sapiente corrupti, vel veritatis repudiandae repellendus saepe sed? Alias sit quod repellendus est officiis deserunt nostrum facilis!</h4>
-                                    <div class="d-flex align-items-center mb-1">
-                                        <span class="fs-4 fw-inter-regular">R$ 279</span>
-                                    </div>
-                                    <div class="small mb-2">em 10x R$ 27,90 sem juros</div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a href="#" class="card-product card h-100 ml-card shadow-sm text-decoration-none border-0 shadow-sm hover-lift">
-                            <img src="..." class="card-img-top p-3 img-contain" alt="...">
-                            <div class="card-body p-3 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h4 class="fs-6 fw-inter-regular mb-1 line-clamp-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident perspiciatis labore, aut, tempora sapiente corrupti, vel veritatis repudiandae repellendus saepe sed? Alias sit quod repellendus est officiis deserunt nostrum facilis!</h4>
-                                    <div class="d-flex align-items-center mb-1">
-                                        <span class="fs-4 fw-inter-regular">R$ 279</span>
-                                    </div>
-                                    <div class="small mb-2">em 10x R$ 27,90 sem juros</div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a href="#" class="card-product card h-100 ml-card shadow-sm text-decoration-none border-0 shadow-sm hover-lift">
-                            <img src="..." class="card-img-top p-3 img-contain" alt="...">
-                            <div class="card-body p-3 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h4 class="fs-6 fw-inter-regular mb-1 line-clamp-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident perspiciatis labore, aut, tempora sapiente corrupti, vel veritatis repudiandae repellendus saepe sed? Alias sit quod repellendus est officiis deserunt nostrum facilis!</h4>
-                                    <div class="d-flex align-items-center mb-1">
-                                        <span class="fs-4 fw-inter-regular">R$ 279</span>
-                                    </div>
-                                    <div class="small mb-2">em 10x R$ 27,90 sem juros</div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
+
+                    <?php
+                        }
+
+                        }else{
+                            echo "<p class='text-center lg-3'>Erro ao buscar produtos.</p>";
+                        }
+
+                        mysqli_close($conexao);
+                    ?>
+
                 </div>
             </div>
         </section>
+
+        <?php
+            $categorias_info = [
+                ['./assets/img/transparent_png/Ellipse 19.png','Aquecedor a Gás','../../php/pages/produto-menu.php?nome=Aquecedor a Gás'],
+                ['./assets/img/transparent_png/Ellipse 20.png','Aquecedor Solar','../../php/pages/produto-menu.php?nome=Aquecedor Solar'],
+                ['./assets/img/transparent_png/Ellipse 21.png','Aquecedor Solar de Piscina','../../php/pages/produto-menu.php?nome=Aquecedor Solar de Piscina'],
+                ['./assets/img/transparent_png/Ellipse 28.png','Iluminação de Piscina','../../php/pages/produto-menu.php?nome=Iluminação de Piscina'],
+                ['./assets/img/transparent_png/Ellipse 30.png','Pressurizadoras','../../php/pages/produto-menu.php?nome=Pressurizadoras'],
+            ];
+        ?>
 
         <section class="bg-body-tertiary py-5">
             <div class="container">
                 <h4 class="text-center fw-inter-bold mb-5 text-uppercase"><b class="text-orange">Categorias</b></h4>
                     <div class="row row-cols-2 row-cols-lg-3 row-cols-xl-5 g-3 d-flex text-center">
-                        <div class="col">
-                            <a href="#" class="text-decoration-none">
-                                <img src="" alt="" class="rounded-circle mb-2 categorias-img">
-                                <div>
-                                    <span class="text-muted">Categorias</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a href="#" class="text-decoration-none">
-                                <img src="" alt="" class="rounded-circle mb-2 categorias-img">
-                                <div>
-                                    <span class="text-muted">Categorias</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a href="#" class="text-decoration-none">
-                                <img src="" alt="" class="rounded-circle mb-2 categorias-img">
-                                <div>
-                                    <span class="text-muted">Categorias</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a href="#" class="text-decoration-none">
-                                <img src="" alt="" class="rounded-circle mb-2 categorias-img">
-                                <div>
-                                    <span class="text-muted">Categorias</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a href="#" class="text-decoration-none">
-                                <img src="" alt="" class="rounded-circle mb-2 categorias-img">
-                                <div>
-                                    <span class="text-muted">Categorias</span>
-                                </div>
-                            </a>
-                        </div>
+
+                        <?php for($i = 0; $i < count($categorias_info); $i++) {?>
+
+                            <div class="col">
+                                <a href="<?php echo($categorias_info[$i][2])?>" class="text-decoration-none">
+                                    <img src="<?php echo($categorias_info[$i][0])?>" alt="" class="rounded-circle mb-2 categorias-img bg-body">
+                                    <div>
+                                        <span class="text-muted"><?php echo($categorias_info[$i][1])?></span>
+                                    </div>
+                                </a>
+                            </div>
+
+                        <?php
+                            }
+                        ?>
+                        
                     </div>
                 </div>
             </div>
@@ -350,68 +242,19 @@
             </div>
         </section>
 
-        <a target="_blank" href="https://api.whatsapp.com/send?phone=5519996294625&text=Ol%C3%A1!%20Gostaria%20de%20saber%20sobre%20aquecedores."
-            class="wpp-icon position-fixed text-white rounded-circle d-flex text-center align-items-center justify-content-center shadow-lg fs-2">
-        <i class="bi bi-whatsapp fs-2"></i></a>
+        <?php
+            include("./inc/wpp.php");
+        ?>
 
     </main>
 
-    <footer class="pt-5 pb-4 mt-5 bg-dark-gray">
-        <div class="container">
-            <div class="row ali">
-                <div class="col-lg-7 text-white mb-5 fs-7">
-                    <h4 class="fw-inter-semibold text-orange">Valeretto Aquecedores</h4>
-                    
-                    <p class="text-white mt-3 mb-4 fw-inter-regular w-75">há mais de 19 anos oferecendo soluções tecnológicas e sustentáveis de alta performance para aquecimento de água.</p>
+    <?php 
+        include("./inc/footer.php");
+    ?>
 
-                    <div>
-                        <div>
-                            <i class="bi bi-envelope-at-fill me-2 hover-orange"></i>valeretto@valeretto.com.br
-                        </div>
-                        <div>
-                            <i class="bi bi-whatsapp me-2 hover-orange"></i>(19) 9 9629-4625
-                        </div>
-                        <div>
-                            <i class="bi bi-telephone-forward-fill me-2 hover-orange"></i>(19) 3405 9681
-                        </div>
-                    </div>
-                </div>
-
-                <div class="footer-links col-lg-3 mb-3 fs-7">
-                    <h5 class="text-white fw-inter-semibold mb-4">Produtos</h5>
-                    <ul class="list-unstyled d-flex flex-column gap-1">
-                        <li><a class="text-decoration-none link-orange" href="#">Aquecedor a Gás</a></li>
-                        <li><a class="text-decoration-none link-orange" href="#">Aquecedor Solar</a></li>
-                        <li><a class="text-decoration-none link-orange" href="#">Aquecedor Solar de Piscina</a></li>
-                        <li><a class="text-decoration-none link-orange" href="#">Iluminação de Piscina</a></li>
-                        <li><a class="text-decoration-none link-orange" href="#">Pressurizadoras</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-links col-lg-2 mb-3 fs-7">
-                    <h5 class="text-white fw-inter-semibold mb-4">Navegação</h5>
-                    <ul class="list-unstyled d-flex flex-column gap-1 text-white">
-                        <li><a class="text-decoration-none link-orange" href="./pages/nossa-historia/index.php">Nossa História</a></li>
-                        <li><a class="text-decoration-none link-orange" href="./pages/contato/index.php">Contato</a></li>
-                        <li><a class="text-decoration-none link-orange" href="#">FAQ</a></li>
-                        <li><a class="text-decoration-none link-orange" href="./pages/blog/index.php">Blog</a></li>
-                    </ul>
-
-                    <ul class="list-unstyled d-flex flex-column gap-1 text-white">
-                        <li><a class="text-decoration-none link-orange" href="#">Site do Mapa</a></li>
-                        <li><a class="text-decoration-none link-orange" href="#">Política de Privacidade</a></li>
-                    </ul>
-                </div>
-
-            </div>
-            <div class="text-white text-center mt-3">
-                Copyright © 2026 – Valeretto Aquecedores e Acessórios
-            </div>
-        </div>
-    </footer>
-
-    <script src="./src/js/vendor/bootstrap.bundle.min.js"></script>
-    <script src="./src/js/script.js"></script>
+    <?php
+        include("./inc/script.php");
+    ?>
 </body>
 
 </html>
