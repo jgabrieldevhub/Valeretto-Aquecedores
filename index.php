@@ -76,7 +76,7 @@
                             $sql = "SELECT * FROM tb_produto";
                         }
 
-                        $resultado = mysqli_query($conn, $sql);
+                        $resultado = mysqli_query($conexao, $sql);
 
         
                         if ($resultado) {
@@ -112,7 +112,7 @@
                             echo "<p class='text-center lg-3'>Erro ao buscar produtos.</p>";
                         }
 
-                        mysqli_close($conn);
+                        mysqli_close($conexao);
                     ?>
 
                 </div>

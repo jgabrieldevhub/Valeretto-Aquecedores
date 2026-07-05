@@ -17,14 +17,14 @@
         $sql_clientes = "SELECT id_cliente, nome_cliente, email, telefone FROM tb_cliente ORDER BY id_cliente ASC";
 
         // Executa a consulta SQL de listagem de clientes utilizando a conexão ativa criada anteriormente
-        $resultado_clientes = mysqli_query($conn, $sql_clientes);
+        $resultado_clientes = mysqli_query($conexao, $sql_clientes);
     ?>
 
-    <main class="container mt-5">
+    <main class="container my-4">
 
         <div class="d-flex justify-content-between align-items-center mb-5">
             <div>
-                <a class="logo navbar-brand" href="index.php"><img src="../../assets/img/transparent_png/cropped-Valeretto-Logo.png"
+                <a class="logo navbar-brand" href="../../index.php"><img src="../../assets/img/transparent_png/cropped-Valeretto-Logo.png"
                 alt="Inicio"></a>
 
             </div>
@@ -61,7 +61,7 @@
                             // Define a instrução SQL para selecionar todas as colunas de produtos ordenados por nome e depois pelo preço
                             $sql_produtos = "SELECT * FROM tb_produto ORDER BY id_produto ASC";
                             // Executa a consulta SQL de listagem de produtos utilizando a conexão ativa com a base de dados
-                            $resultado_produtos = mysqli_query($conn, $sql_produtos);
+                            $resultado_produtos = mysqli_query($conexao, $sql_produtos);
 
                             // Confirma se a busca gerou resultados válidos e encontrou ao menos um produto no banco de dados
                             if ($resultado_produtos && mysqli_num_rows($resultado_produtos) > 0) {
@@ -91,8 +91,8 @@
                                     // Imprime o bloco contendo os links de ação de edição e exclusão contendo um aviso javascript de confirmação de exclusão
                                     echo "<td>
                                         <div class='d-flex gap-2'>
-                                            <a href='produto-editar.php?id=" . htmlspecialchars($linha_resultado['id_produto']) . "' class='btn btn-primary btn-sm px-2'>Editar</a>
-                                            <a href='produto-excluir.php?id=" . htmlspecialchars($linha_resultado['id_produto']) . "' class='btn btn-danger btn-sm px-2' onclick='return confirm(\"Tem certeza que deseja excluir?\")'>Excluir</a>
+                                            <a href='../valid/crud/produto-editar.php?id=" . htmlspecialchars($linha_resultado['id_produto']) . "' class='btn btn-primary btn-sm px-2'>Editar</a>
+                                            <a href='../valid/crud/produto-excluir.php?id=" . htmlspecialchars($linha_resultado['id_produto']) . "' class='btn btn-danger btn-sm px-2' onclick='return confirm(\"Tem certeza que deseja excluir?\")'>Excluir</a>
                                         </div>
                                     </td>";
 
@@ -114,7 +114,7 @@
 
     <?php 
         // Encerra oficialmente a conexão aberta com o banco de dados MySQL para liberar recursos do servidor de hospedagem
-        mysqli_close($conn);
+        mysqli_close($conexao);
     ?>
 
 </body>
