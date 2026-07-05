@@ -121,10 +121,11 @@
 
         <?php
             $categorias_info = [
-                ['',''],
-                ['',''],
-                ['',''],
-                ['',''],
+                ['./assets/img/transparent_png/Ellipse 19.png','Aquecedor a Gás'],
+                ['./assets/img/transparent_png/Ellipse 20.png','Aquecedor Solar'],
+                ['./assets/img/transparent_png/Ellipse 21.png','Aquecedor Solar de Piscina'],
+                ['./assets/img/transparent_png/Ellipse 28.png','Iluminação de Piscina'],
+                ['./assets/img/transparent_png/Ellipse 30.png','Pressurizadoras'],
             ];
         ?>
 
@@ -132,14 +133,22 @@
             <div class="container">
                 <h4 class="text-center fw-inter-bold mb-5 text-uppercase"><b class="text-orange">Categorias</b></h4>
                     <div class="row row-cols-2 row-cols-lg-3 row-cols-xl-5 g-3 d-flex text-center">
-                        <div class="col">
-                            <a href="#" class="text-decoration-none">
-                                <img src="" alt="" class="rounded-circle mb-2 categorias-img">
-                                <div>
-                                    <span class="text-muted">Categorias</span>
-                                </div>
-                            </a>
-                        </div>
+
+                        <?php for($i = 0; $i < count($categorias_info); $i++) {?>
+
+                            <div class="col">
+                                <a href="#" class="text-decoration-none">
+                                    <img src="<?php echo($categorias_info[$i][0])?>" alt="" class="rounded-circle mb-2 categorias-img bg-body">
+                                    <div>
+                                        <span class="text-muted"><?php echo($categorias_info[$i][1])?></span>
+                                    </div>
+                                </a>
+                            </div>
+
+                        <?php
+                            }
+                        ?>
+                        
                     </div>
                 </div>
             </div>
