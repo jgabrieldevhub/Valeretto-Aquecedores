@@ -2,7 +2,7 @@
 <html lang="pt-br">
 
     <?php
-        $css_page_link = "Valeretto Aquecedores - Valeretto";
+        $page_title = "Valeretto Aquecedores - Valeretto";
         include("./inc/head.php");
     ?>
 
@@ -30,49 +30,32 @@
             </div>
         </section>
 
+        <?php
+            $home_cads_info = [
+                ['./assets/icons/Icone_vinte_anos.svg','Há mais de 20 anos de experiência no mercado de sistema de aquecimento de água'],
+                ['./assets/icons/Icone_gota.svg','Milhares de litros de água aquecida por ano pelos nossos profissionais efecientes'],
+                ['./assets/icons/Icone_consultoria_pre.svg','Oferecemos consultoria pré-instalação para melhor desempenho do sistema'],
+                ['./assets/icons/Icone_seguro.svg','Trabalhamos com sistemas para projetos residências, comerciais e industriais'],
+            ];
+        ?>
+
         <section class="cards-hero pb-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3">
-                        <div class="card text-center border-0 shadow p-3 my-3 h-auto">
-                            <div>
-                            <img src="./assets/icons/Icone_vinte_anos.svg" class="icon card-img-top" alt="...">
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text fs-7 fw-inter-regular">Há mais de 20 anos de experiência no mercado de sistema de aquecimento de água</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="card text-center border-0 shadow p-3 my-3 h-auto">
-                            <div>
-                            <img src="./assets/icons/Icone_gota.svg" class="icon card-img-top" alt="...">
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text fs-7 fw-inter-regular">Milhares de litros de água aquecida por ano pelos nossos profissionais efecientes</p>
+                    <?php for($i = 0; $i < count($home_cads_info); $i++) {?>
+                        <div class="col-lg-3">
+                            <div class="card text-center border-0 shadow p-3 my-3 h-auto">
+                                <div>
+                                    <img src="<?php echo($home_cads_info[$i][0])?>" class="icon card-img-top" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text fs-7 fw-inter-regular"><?php echo($home_cads_info[$i][1])?></p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="card text-center border-0 shadow p-3 my-3 h-auto">
-                            <div>
-                            <img src="./assets/icons/Icone_consultoria_pre.svg" class="icon card-img-top" alt="...">
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text fs-7 fw-inter-regular">Oferecemos consultoria pré-instalação para melhor desempenho do sistema</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="card text-center border-0 shadow p-3 my-3 h-auto">
-                            <div>
-                            <img src="./assets/icons/Icone_seguro.svg" class="icon card-img-top" alt="...">
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text fs-7 fw-inter-regular">Trabalhamos com sistemas para projetos residências, comerciais e industriais</p>
-                            </div>
-                        </div>
-                    </div>
+                    <?php
+                        }
+                    ?>    
                 </div>
             </div>
         </section>
@@ -81,82 +64,68 @@
             <div class="container">
                 <h4 class="text-center fw-inter-bold mb-5 text-uppercase">Produtos em <b class="text-orange">Destaque</b></h4>
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-5 g-3">
-                    <div class="col">
-                        <a href="#" class="card-product card h-100 ml-card shadow-sm text-decoration-none border-0 shadow-sm hover-lift">
-                            <img src="..." class="card-img-top p-3 img-contain" alt="...">
-                            <div class="card-body p-3 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h4 class="fs-6 fw-inter-regular mb-1 line-clamp-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident perspiciatis labore, aut, tempora sapiente corrupti, vel veritatis repudiandae repellendus saepe sed? Alias sit quod repellendus est officiis deserunt nostrum facilis!</h4>
-                                    <div class="d-flex align-items-center mb-1">
-                                        <span class="fs-4 fw-inter-regular">R$ 279</span>
+
+                    <?php
+                        include("./inc/conn.php");
+
+                        $id = isset($_GET['id']) ? (int)$_GET['id'] : 0;
+
+                        if ($id > 0) {
+                            $sql = "SELECT * FROM tb_produto WHERE id_produto = $id";
+                        } else {
+                            $sql = "SELECT * FROM tb_produto";
+                        }
+
+                        $resultado = mysqli_query($conn, $sql);
+
+        
+                        if ($resultado) {
+                            while($linha = mysqli_fetch_assoc($resultado)){
+                                $id_prod   = $linha['id_produto'];
+                                $nome      = $linha['nome_produto'];
+                                $descricao = $linha['descricao_produto'];
+                                $estoque   = $linha['estoque_produto'];
+                                $preco     = number_format($linha['preco_produto'], 2, ',', '.');
+                                $foto      = $linha['imagem_produto'];
+                    ?>
+
+                        <div class="col">
+                            <a href="#" class="card-product card h-100 ml-card shadow-sm text-decoration-none border-0 shadow-sm hover-lift">
+                                <img src="<?=$foto; ?>" alt="<?=$nome; ?>" class="card-img-top p-3 img-contain" alt="...">
+                                <div class="card-body p-3 d-flex flex-column justify-content-between">
+                                    <div>
+                                        <h4 class="fs-4 fw-inter-bold mb-1 line-clamp-2"><?=$nome; ?></h4>
+                                        <h4 class="fs-6 fw-inter-regular text-mu4 mb-1 line-clamp-2"><?=$descricao; ?></h4>
+                                        <div class="d-flex align-items-center mb-1">
+                                            <span class="fs-4 fw-inter-semibold text-orange">R$ <?=$preco; ?></span>
+                                        </div>
+                                        <div class="small mb-2">Disponível: <?php echo $estoque; ?> unidades.</div>
                                     </div>
-                                    <div class="small mb-2">em 10x R$ 27,90 sem juros</div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a href="#" class="card-product card h-100 ml-card shadow-sm text-decoration-none border-0 shadow-sm hover-lift">
-                            <img src="..." class="card-img-top p-3 img-contain" alt="...">
-                            <div class="card-body p-3 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h4 class="fs-6 fw-inter-regular mb-1 line-clamp-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident perspiciatis labore, aut, tempora sapiente corrupti, vel veritatis repudiandae repellendus saepe sed? Alias sit quod repellendus est officiis deserunt nostrum facilis!</h4>
-                                    <div class="d-flex align-items-center mb-1">
-                                        <span class="fs-4 fw-inter-regular">R$ 279</span>
-                                    </div>
-                                    <div class="small mb-2">em 10x R$ 27,90 sem juros</div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a href="#" class="card-product card h-100 ml-card shadow-sm text-decoration-none border-0 shadow-sm hover-lift">
-                            <img src="..." class="card-img-top p-3 img-contain" alt="...">
-                            <div class="card-body p-3 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h4 class="fs-6 fw-inter-regular mb-1 line-clamp-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident perspiciatis labore, aut, tempora sapiente corrupti, vel veritatis repudiandae repellendus saepe sed? Alias sit quod repellendus est officiis deserunt nostrum facilis!</h4>
-                                    <div class="d-flex align-items-center mb-1">
-                                        <span class="fs-4 fw-inter-regular">R$ 279</span>
-                                    </div>
-                                    <div class="small mb-2">em 10x R$ 27,90 sem juros</div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a href="#" class="card-product card h-100 ml-card shadow-sm text-decoration-none border-0 shadow-sm hover-lift">
-                            <img src="..." class="card-img-top p-3 img-contain" alt="...">
-                            <div class="card-body p-3 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h4 class="fs-6 fw-inter-regular mb-1 line-clamp-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident perspiciatis labore, aut, tempora sapiente corrupti, vel veritatis repudiandae repellendus saepe sed? Alias sit quod repellendus est officiis deserunt nostrum facilis!</h4>
-                                    <div class="d-flex align-items-center mb-1">
-                                        <span class="fs-4 fw-inter-regular">R$ 279</span>
-                                    </div>
-                                    <div class="small mb-2">em 10x R$ 27,90 sem juros</div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a href="#" class="card-product card h-100 ml-card shadow-sm text-decoration-none border-0 shadow-sm hover-lift">
-                            <img src="..." class="card-img-top p-3 img-contain" alt="...">
-                            <div class="card-body p-3 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h4 class="fs-6 fw-inter-regular mb-1 line-clamp-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident perspiciatis labore, aut, tempora sapiente corrupti, vel veritatis repudiandae repellendus saepe sed? Alias sit quod repellendus est officiis deserunt nostrum facilis!</h4>
-                                    <div class="d-flex align-items-center mb-1">
-                                        <span class="fs-4 fw-inter-regular">R$ 279</span>
-                                    </div>
-                                    <div class="small mb-2">em 10x R$ 27,90 sem juros</div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
+
+                    <?php
+                        }
+
+                        }else{
+                            echo "<p class='text-center lg-3'>Erro ao buscar produtos.</p>";
+                        }
+
+                        mysqli_close($conn);
+                    ?>
+
                 </div>
             </div>
         </section>
 
         <?php
-            
+            $categorias_info = [
+                ['',''],
+                ['',''],
+                ['',''],
+                ['',''],
+            ];
         ?>
 
         <section class="bg-body-tertiary py-5">
