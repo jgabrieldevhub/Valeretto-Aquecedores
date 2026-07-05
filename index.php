@@ -1,75 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valeretto Aquecedores - Valeretto</title>
-    <link rel="stylesheet" href="./src/css/vendor/bootstrap.min.css">
-    <link rel="stylesheet" href="./src/css/global.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="icon" href="./assets/img/transparent_png/cropped-Valeretto-favicon-192x192.png" sizes="192x192">
-</head>
+    <?php
+        $css_page_link = "Valeretto Aquecedores - Valeretto";
+        include("./inc/head.php");
+    ?>
 
 <body>
 
-    <header class="sticky-top">
-        <nav class="navbar navbar-expand-lg shadow-sm bg-white">
-            <div class="container container-fluid">
-                <a class="logo navbar-brand" href="index.php"><img src="./assets/img/transparent_png/cropped-Valeretto-Logo.png"
-                        alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="ms-auto navbar-nav fs-5 fw-inter-semibold gap-2">
-                        <li class="nav-item dropdown text">
-                            <a class="nav-link dropdown-toggle link-dark-gray" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Produtos
-                            </a>
-                            <ul class="dropdown-menu border-0 shadow-sm fs-6">
-                                <li><a class="dropdown-item hover-orange fw-inter-medium" href="#">Aquecedor a Gás</a></li>
-                                <li><a class="dropdown-item hover-orange fw-inter-medium" href="#">Aquecedor Solar</a></li>
-                                <li><a class="dropdown-item hover-orange fw-inter-medium" href="#">Aquecedor Solar de Piscina</a></li>
-                                <li><a class="dropdown-item hover-orange fw-inter-medium" href="#">Iluminação de Piscina</a></li>
-                                <li><a class="dropdown-item hover-orange fw-inter-medium" href="#">Pressurizadoras</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-dark-gray" aria-current="page" href="./pages/nossa-historia/index.php">Nossa História</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-dark-gray" aria-current="page" href="./pages/blog/index.php">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-dark-gray" aria-current="page" href="./pages/contato/index.php">Contato</a>
-                        </li>
-                    </ul>
-                    <ul class="ms-auto navbar-nav fs-6 fw-inter-semibold">
-                    <li class="nav-item dropdown text">
-                        <div class="d-flex align-items-center gap-1 ms-auto">
-                        <img class="login-icon me-1" width="38" height="38" src="https://img.icons8.com/pastel-glyph/38/ec9744/user-male-circle.png" alt="user-male-circle"/>
-                            <div>
-                            <a href="#" class="text-decoration-none text-orange"><b>Entre</b></a>
-                            ou
-                            <br>
-                            <a href="#" class="text-decoration-none text-dark-gray"><b>Cadastre-se</b></a>
-                            </div>
-                        </div>
-                        <ul class="dropdown-menu border-0 shadow-sm fs-6 fw-inter-medium">
-                            <li><a class="dropdown-item hover-orange" href="#">Entre</a></li>
-                            <li><a class="dropdown-item hover-orange" href="#">Cadastre-se</a></li>
-                        </ul>
-                    </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <?php
+        include("./inc/header.php");
+    ?>
 
     <main>
         <section class="hero-homepage py-5">
@@ -214,42 +155,14 @@
             </div>
         </section>
 
+        <?php
+            
+        ?>
+
         <section class="bg-body-tertiary py-5">
             <div class="container">
                 <h4 class="text-center fw-inter-bold mb-5 text-uppercase"><b class="text-orange">Categorias</b></h4>
                     <div class="row row-cols-2 row-cols-lg-3 row-cols-xl-5 g-3 d-flex text-center">
-                        <div class="col">
-                            <a href="#" class="text-decoration-none">
-                                <img src="" alt="" class="rounded-circle mb-2 categorias-img">
-                                <div>
-                                    <span class="text-muted">Categorias</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a href="#" class="text-decoration-none">
-                                <img src="" alt="" class="rounded-circle mb-2 categorias-img">
-                                <div>
-                                    <span class="text-muted">Categorias</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a href="#" class="text-decoration-none">
-                                <img src="" alt="" class="rounded-circle mb-2 categorias-img">
-                                <div>
-                                    <span class="text-muted">Categorias</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a href="#" class="text-decoration-none">
-                                <img src="" alt="" class="rounded-circle mb-2 categorias-img">
-                                <div>
-                                    <span class="text-muted">Categorias</span>
-                                </div>
-                            </a>
-                        </div>
                         <div class="col">
                             <a href="#" class="text-decoration-none">
                                 <img src="" alt="" class="rounded-circle mb-2 categorias-img">
@@ -350,68 +263,19 @@
             </div>
         </section>
 
-        <a target="_blank" href="https://api.whatsapp.com/send?phone=5519996294625&text=Ol%C3%A1!%20Gostaria%20de%20saber%20sobre%20aquecedores."
-            class="wpp-icon position-fixed text-white rounded-circle d-flex text-center align-items-center justify-content-center shadow-lg fs-2">
-        <i class="bi bi-whatsapp fs-2"></i></a>
+        <?php
+            include("./inc/wpp.php");
+        ?>
 
     </main>
 
-    <footer class="pt-5 pb-4 mt-5 bg-dark-gray">
-        <div class="container">
-            <div class="row ali">
-                <div class="col-lg-7 text-white mb-5 fs-7">
-                    <h4 class="fw-inter-semibold text-orange">Valeretto Aquecedores</h4>
-                    
-                    <p class="text-white mt-3 mb-4 fw-inter-regular w-75">há mais de 19 anos oferecendo soluções tecnológicas e sustentáveis de alta performance para aquecimento de água.</p>
+    <?php 
+        include("./inc/footer.php");
+    ?>
 
-                    <div>
-                        <div>
-                            <i class="bi bi-envelope-at-fill me-2 hover-orange"></i>valeretto@valeretto.com.br
-                        </div>
-                        <div>
-                            <i class="bi bi-whatsapp me-2 hover-orange"></i>(19) 9 9629-4625
-                        </div>
-                        <div>
-                            <i class="bi bi-telephone-forward-fill me-2 hover-orange"></i>(19) 3405 9681
-                        </div>
-                    </div>
-                </div>
-
-                <div class="footer-links col-lg-3 mb-3 fs-7">
-                    <h5 class="text-white fw-inter-semibold mb-4">Produtos</h5>
-                    <ul class="list-unstyled d-flex flex-column gap-1">
-                        <li><a class="text-decoration-none link-orange" href="#">Aquecedor a Gás</a></li>
-                        <li><a class="text-decoration-none link-orange" href="#">Aquecedor Solar</a></li>
-                        <li><a class="text-decoration-none link-orange" href="#">Aquecedor Solar de Piscina</a></li>
-                        <li><a class="text-decoration-none link-orange" href="#">Iluminação de Piscina</a></li>
-                        <li><a class="text-decoration-none link-orange" href="#">Pressurizadoras</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-links col-lg-2 mb-3 fs-7">
-                    <h5 class="text-white fw-inter-semibold mb-4">Navegação</h5>
-                    <ul class="list-unstyled d-flex flex-column gap-1 text-white">
-                        <li><a class="text-decoration-none link-orange" href="./pages/nossa-historia/index.php">Nossa História</a></li>
-                        <li><a class="text-decoration-none link-orange" href="./pages/contato/index.php">Contato</a></li>
-                        <li><a class="text-decoration-none link-orange" href="#">FAQ</a></li>
-                        <li><a class="text-decoration-none link-orange" href="./pages/blog/index.php">Blog</a></li>
-                    </ul>
-
-                    <ul class="list-unstyled d-flex flex-column gap-1 text-white">
-                        <li><a class="text-decoration-none link-orange" href="#">Site do Mapa</a></li>
-                        <li><a class="text-decoration-none link-orange" href="#">Política de Privacidade</a></li>
-                    </ul>
-                </div>
-
-            </div>
-            <div class="text-white text-center mt-3">
-                Copyright © 2026 – Valeretto Aquecedores e Acessórios
-            </div>
-        </div>
-    </footer>
-
-    <script src="./src/js/vendor/bootstrap.bundle.min.js"></script>
-    <script src="./src/js/script.js"></script>
+    <?php
+        include("./inc/script.php");
+    ?>
 </body>
 
 </html>
