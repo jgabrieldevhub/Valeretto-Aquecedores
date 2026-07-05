@@ -2,6 +2,7 @@
 <html lang="pt-br">
 
     <?php
+        session_start();
         $page_title = "Valeretto Aquecedores - Valeretto";
         include("./inc/head.php");
     ?>
@@ -90,7 +91,7 @@
                     ?>
 
                         <div class="col">
-                            <a href="#" class="card-product card h-100 ml-card shadow-sm text-decoration-none border-0 shadow-sm hover-lift">
+                            <a href="https://api.whatsapp.com/send?phone=5519996294625&text=Ol%C3%A1!%20Gostaria%20de%20saber%20sobre%20<?=$nome?>." class="card-product card h-100 ml-card shadow-sm text-decoration-none border-0 shadow-sm hover-lift">
                                 <img src="<?=$foto; ?>" alt="<?=$nome; ?>" class="card-img-top p-3 img-contain" alt="...">
                                 <div class="card-body p-3 d-flex flex-column justify-content-between">
                                     <div>

@@ -1,4 +1,3 @@
-
 <?php
 session_start();
 include "../../valid/trava_admin.php"; 
