@@ -46,7 +46,7 @@
                             </div>
                         </div>
                         <ul class="dropdown-menu border-0 shadow-sm fs-6 fw-inter-medium">
-                            <li><a class="dropdown-item hover-orange" href="#">Entre</a></li>
+                            <li><a class="dropdown-item hover-orange" href="../../php/pages/login.php">Entre</a></li>
                             <li><a class="dropdown-item hover-orange" href="#">Cadastre-se</a></li>
                         </ul>
                     </li>
