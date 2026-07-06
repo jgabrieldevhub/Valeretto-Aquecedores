@@ -2,7 +2,6 @@
 <html lang="pt-br">
 
     <?php
-        session_start();
         $page_title = "Valeretto Aquecedores - Valeretto";
         include("./inc/head.php");
     ?>
